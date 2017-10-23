@@ -1,0 +1,21 @@
+alias: Morning Light
+trigger:
+  platform: time
+  at: '06:10:00'
+condition:
+  condition: state
+  entity_id: 'binary_sensor.workday_sensor'
+  state: 'on'
+action:
+- service: light.turn_on
+  data:
+    brightness_pct: '10'
+    entity_id: light.floor
+    profile: morning
+- service: light.turn_on
+  data:
+    brightness_pct: '1'
+    entity_id:
+      - light.bedroom
+      - light.floor
+    profile: morning
