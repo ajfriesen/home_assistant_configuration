@@ -1,0 +1,22 @@
+family_info:
+  name: Smartphone on Wifi
+  entities:
+    - device_tracker.andrejs_phone
+    - device_tracker.theresas_phone
+
+
+internet_speed:
+  name: Internet Speed
+  entities:
+    - sensor.speedtest_download
+    - sensor.speedtest_upload
+    - sensor.speedtest_ping
+
+fritz_box:
+  name: Fritz Box 6360 Cable
+
+sun_info:
+  name: Sun Information
+  entities:
+    - sensor.sun_rise
+    - sensor.sun_dawn
