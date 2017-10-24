@@ -1,0 +1,89 @@
+homeassistant:
+  customize: !include customize.yaml
+  name: Home
+  latitude: !secret home_latitude
+  longitude: !secret home_longitude
+  elevation: !secret home_elevation
+  unit_system: metric
+  time_zone: Europe/Berlin
+
+# Enables the frontend
+frontend:
+
+# Enables configuration UI
+config:
+
+map:
+
+http:
+  api_password: !secret http_password
+  base_url: !secret base_url
+  ssl_certificate: /ssl/fullchain.pem
+  ssl_key: /ssl/privkey.pem
+  ip_ban_enabled: True
+  login_attempts_threshold: "5"
+
+binary_sensor:
+  - platform: workday
+    country: DE
+
+# Maria DB
+recorder:
+  db_url: !secret maria_db_url
+
+updater:
+  include_used_components: true
+
+# Discover some devices automatically
+discovery:
+
+# Allows you to issue voice commands from the frontend in enabled browsers
+conversation:
+
+# Enables support for tracking state changes over time
+history:
+
+# View all events in a logbook
+logbook:
+
+# Text to speech
+tts:
+  - platform: google
+
+sun:
+
+device_tracker:
+  - platform: fritz
+  - platform: owntracks_http
+
+notify:
+  - name: hassnote
+    platform: html5
+    gcm_api_key: !secret google_server_key
+    gcm_sender_id: !secret google_sender_key
+
+mqtt:
+  broker: 192.168.178.61
+  port: !secret mqtt_port
+  username: !secret mqtt_user
+  password: !secret mqtt_pass
+  discovery: True
+  # protocol: 3.1.1
+
+vacuum:
+  - platform: xiaomi_miio
+    host: 192.168.178.69
+    token: !secret xiaomi_api_key
+    name: Frödolin
+
+# Includes
+
+# input_slider: !include input_number.yaml
+# input_boolean: !include input_boolean.yaml
+# script: !include_dir_named scripts/
+script: !include scripts.yaml
+sensor: !include sensors.yaml
+zone: !include zones.yaml
+group: !include groups.yaml
+switch: !include_dir_list switches/
+automation: !include_dir_list automations/
