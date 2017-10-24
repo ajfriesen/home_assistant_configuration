@@ -53,3 +53,5 @@
     - ping
     - download
     - upload
+
+- platform: moon
