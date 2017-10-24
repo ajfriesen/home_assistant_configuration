@@ -1,0 +1,47 @@
+flash_room1:
+    alias: Flash Floor
+    sequence:
+      - alias: Light Room1 On
+        service: homeassistant.turn_on
+        data:
+          entity_id: light.floor
+      - delay:
+          # time for flash light on
+          seconds: 1
+      - alias: Light Room1 Off
+        service: homeassistant.turn_off
+        data:
+          entity_id: light.floor
+      - delay:
+          # time for flash light off
+          seconds: 1
+      - alias: loop_room1
+        service: script.turn_on
+        data:
+          entity_id: script.flash_room1
+
+start_frido:
+  alias: Gentle vacuum start
+  sequence:
+    - alias: Start
+      service: vacuum.turn_on
+      data:
+        entity_id: vacuum.xiaomi_vacuum_cleaner
+    - alias: Change to Max
+      service: vacuum.set_fan_speed
+      data:
+        fan_speed: "Quiet"
+        entity_id: "vacuum.xiaomi_vacuum_cleaner"
+    - delay:
+        seconds: 15
+    - alias: Change to Max
+      service: vacuum.set_fan_speed
+      data:
+        fan_speed: "Turbo"
+        entity_id: "vacuum.xiaomi_vacuum_cleaner"
+    # - delay:
+    #     seconds: 15
+    # - alias: Stop
+    #   service: vacuum.start_pause
+    #   data:
+    #     entity_id: vacuum.xiaomi_vacuum_cleaner
