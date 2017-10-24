@@ -1,0 +1,8 @@
+secrets.yaml
+*.log
+*.conf
+tts/
+.uuid
+.HA_VERSION
+known_devices.yaml
+ip_bans.yaml
