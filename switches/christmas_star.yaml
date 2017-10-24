@@ -1,0 +1,8 @@
+platform: mqtt
+name: Christmas Star
+command_topic: "cmnd/sonoff/power"
+state_topic: "stat/sonoff/POWER"
+payload_on: "ON"
+payload_off: "OFF"
+qos: "1"
+retain: true
