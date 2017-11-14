@@ -56,6 +56,10 @@ device_tracker:
   - platform: fritz
   - platform: owntracks_http
 
+media_player:
+  - platform: kodi
+    host: 192.168.178.58
+
 notify:
   - name: hassnote
     platform: html5
