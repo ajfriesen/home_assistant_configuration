@@ -20,28 +20,22 @@ flash_room1:
         data:
           entity_id: script.flash_room1
 
-start_frido:
+start_frodolin:
   alias: Gentle vacuum start
   sequence:
     - alias: Start
       service: vacuum.turn_on
       data:
-        entity_id: vacuum.xiaomi_vacuum_cleaner
+        entity_id: vacuum.frodolin
     - alias: Change to Max
       service: vacuum.set_fan_speed
       data:
         fan_speed: "Quiet"
-        entity_id: "vacuum.xiaomi_vacuum_cleaner"
+        entity_id: vacuum.frodolin
     - delay:
         seconds: 15
     - alias: Change to Max
       service: vacuum.set_fan_speed
       data:
-        fan_speed: "Turbo"
-        entity_id: "vacuum.xiaomi_vacuum_cleaner"
-    # - delay:
-    #     seconds: 15
-    # - alias: Stop
-    #   service: vacuum.start_pause
-    #   data:
-    #     entity_id: vacuum.xiaomi_vacuum_cleaner
+        fan_speed: 'Turbo'
+        entity_id: vacuum.frodolin
