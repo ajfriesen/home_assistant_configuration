@@ -76,7 +76,7 @@ mqtt:
 
 vacuum:
   - platform: xiaomi_miio
-    host: 192.168.178.69
+    host: 192.168.178.54
     token: !secret xiaomi_api_key
     name: Frödolin
 
