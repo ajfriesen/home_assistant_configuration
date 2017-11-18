@@ -1,12 +1,11 @@
 - name: Her Work
   latitude: !secret work_latitude_theresa
   longitude: !secret work_longitude_theresa
-  radius: 100
+  radius: 150
   icon: mdi:company
-
 
 - name: His Work
   latitude: !secret work_latitude_andrej
   longitude: !secret work_longitude_andrej
-  radius: 200
+  radius: 250
   icon: mdi:company
