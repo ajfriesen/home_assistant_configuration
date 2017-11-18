@@ -1,0 +1,16 @@
+media_player.alle:
+  hidden: true
+media_player.bad:
+  hidden: true
+media_player.kuche:
+  hidden: true
+media_player.wohnzimmer:
+  hidden: true
+media_player.alle_2:
+  hidden: true
+device_tracker.chromecastaudio_2:
+  hidden: true
+device_tracker.chromecastaudio:
+  hidden: true
+device_tracker.chromecastaudio_3:
+  hidden: true
