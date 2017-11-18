@@ -4,7 +4,6 @@ family_info:
     - device_tracker.andrejs_phone
     - device_tracker.theresas_phone
 
-
 internet_speed:
   name: Internet Speed
   entities:
@@ -13,7 +12,7 @@ internet_speed:
     - sensor.speedtest_ping
 
 fritz_box:
-  name: Fritz Box 6360 Cable
+  name: Fritz Box 6490 Cable
 
 sun_info:
   name: Sun Information
