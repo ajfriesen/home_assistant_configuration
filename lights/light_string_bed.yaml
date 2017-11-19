@@ -1,0 +1,8 @@
+platform: mqtt
+name: Light String Bed
+command_topic: "cmnd/theresas-room/light-string/bed/power"
+state_topic: "stat/theresas-room/light-string/bed/POWER"
+payload_on: "ON"
+payload_off: "OFF"
+qos: "1"
+retain: true
