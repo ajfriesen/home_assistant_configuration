@@ -10,12 +10,12 @@ action:
 - service: light.turn_on
   data:
     brightness_pct: '10'
-    entity_id: light.floor
-    profile: morning
-- service: light.turn_on
-  data:
-    brightness_pct: '1'
     entity_id:
       - light.bedroom
       - light.floor
     profile: morning
+- service: light.turn_on
+  data:
+    entity_id:
+      - light.light_string_bed
+      - ligth.star
