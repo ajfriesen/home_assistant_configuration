@@ -1,0 +1,8 @@
+platform: mqtt
+name: Star
+command_topic: "cmnd/living-room/star/power"
+state_topic: "stat/living-room/star/POWER"
+payload_on: "ON"
+payload_off: "OFF"
+qos: "1"
+retain: true
