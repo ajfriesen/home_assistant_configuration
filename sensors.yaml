@@ -7,6 +7,11 @@
     mode: driving
     departure_time: now
 
+- platform: cpuspeed
+
+- platform: cert_expiry
+  host: ajfriesen.duckdns.org
+
 - platform: haveibeenpwned
   email:
     - !secret mail_andrej1
