@@ -40,11 +40,6 @@
     - highClouds
     - dewpointTemperature
 
-
-################################
-### Speedtest
-################################
-
 - platform: speedtest
   minute:
     - 0
