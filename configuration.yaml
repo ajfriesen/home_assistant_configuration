@@ -82,9 +82,9 @@ vacuum:
 
 # Includes
 
-# input_slider: !include input_number.yaml
 # input_boolean: !include input_boolean.yaml
 # script: !include_dir_named scripts/
+input_number: !include input_number.yaml
 script: !include scripts.yaml
 sensor: !include sensors.yaml
 zone: !include zones.yaml
