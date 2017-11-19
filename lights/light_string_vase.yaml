@@ -1,0 +1,8 @@
+platform: mqtt
+name: Light String Vase
+command_topic: "cmnd/theresas-room/light-string/vase/power"
+state_topic: "stat/theresas-room/light-string/vase/POWER"
+payload_on: "ON"
+payload_off: "OFF"
+qos: "1"
+retain: true
