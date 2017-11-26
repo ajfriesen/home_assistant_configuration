@@ -21,21 +21,21 @@ flash_room1:
           entity_id: script.flash_room1
 
 start_frodolin:
-  alias: Gentle vacuum start
+  alias: 'Gentle vacuum start'
   sequence:
     - alias: Start
       service: vacuum.turn_on
       data:
         entity_id: vacuum.frodolin
-    - alias: Change to Max
+    - alias: 'Change to quiet'
       service: vacuum.set_fan_speed
       data:
         fan_speed: "Quiet"
         entity_id: vacuum.frodolin
     - delay:
         seconds: 15
-    - alias: Change to Max
+    - alias: 'Change to Max'
       service: vacuum.set_fan_speed
       data:
-        fan_speed: 'Turbo'
+        fan_speed: 'Max'
         entity_id: vacuum.frodolin
