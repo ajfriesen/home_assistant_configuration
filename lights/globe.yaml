@@ -1,3 +1,5 @@
+# Sonoff Basic
+
 platform: mqtt
 name: Globe
 command_topic: "cmnd/theresas-room/globe/power"

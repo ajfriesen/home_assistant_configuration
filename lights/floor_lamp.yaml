@@ -1,3 +1,5 @@
+# Sonoff Basic
+
 platform: mqtt
 name: Floor lamp
 command_topic: "cmnd/theresas-room/floor-lamp/power"

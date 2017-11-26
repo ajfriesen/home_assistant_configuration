@@ -1,3 +1,5 @@
+# Sonoff Basic
+
 platform: mqtt
 name: Star
 command_topic: "cmnd/living-room/star/power"
