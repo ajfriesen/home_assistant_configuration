@@ -1,8 +1,8 @@
-family_info:
-  name: Smartphone on Wifi
+gps_info:
+  name: "Where is everybody?"
   entities:
-    - device_tracker.andrejs_phone
-    - device_tracker.theresas_phone
+    - device_tracker.andrej_oneplus5t
+    - device_tracker.theresa_motog3
 
 internet_speed:
   name: Internet Speed
@@ -10,12 +10,3 @@ internet_speed:
     - sensor.speedtest_download
     - sensor.speedtest_upload
     - sensor.speedtest_ping
-
-fritz_box:
-  name: Fritz Box 6490 Cable
-
-sun_info:
-  name: Sun Information
-  entities:
-    - sensor.sun_rise
-    - sensor.sun_dawn
