@@ -1,9 +1,8 @@
 alias: 'Turn off all lights when nobodys home'
 trigger:
   platform: state
-  entity_id: device_tracker.theresas_phone
-  from: 'home'
-  to: 'not_home'
+  entity_id: sensor.someone_is_home
+  to: 'no'
 action:
   service: light.turn_off
   entity_id: group.all_lights
