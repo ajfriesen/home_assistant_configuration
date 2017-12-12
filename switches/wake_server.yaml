@@ -1,3 +1,0 @@
-platform: wake_on_lan
-mac_address: !secret server_mac
-name: "Wake server"
