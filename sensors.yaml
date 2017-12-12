@@ -1,6 +1,6 @@
 - platform: google_travel_time
   api_key: !secret google_maps_key
-  origin: device_tracker.andrejs_phone
+  origin: device_tracker.andrej_oneplus5t
   destination: !secret destination
   name: Work
   options:
