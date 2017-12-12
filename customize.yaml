@@ -14,3 +14,31 @@ device_tracker.chromecastaudio:
   hidden: true
 device_tracker.chromecastaudio_3:
   hidden: true
+device_tracker.sonoff7896:
+  hidden: true
+device_tracker.sonoff6601:
+  hidden: true
+device_tracker.sonoff3199:
+  hidden: true
+device_tracker.sonoff3098:
+  hidden: true
+device_tracker.sonoff2450:
+  hidden: true
+device_tracker.sonoff2327:
+  hidden: true
+device_tracker.sonoff1723:
+  hidden: true
+device_tracker.sonoff1483:
+  hidden: true
+device_tracker.tpver_402011_140208_001:
+  hidden: true
+device_tracker.tpver_402011_140208_001_2:
+  hidden: true
+device_tracker.hassio:
+  hidden: true
+device_tracker.fritznas:
+  hidden: true
+device_tracker.fritzbox:
+  hidden: true
+device_tracker.switch:
+  hidden: true
