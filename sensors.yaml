@@ -2,7 +2,6 @@
   api_key: !secret google_maps_key
   origin: device_tracker.andrej_oneplus5t
   destination: !secret destination_andrej_work
-  name: "Traveltime to Work"
   options:
     mode: driving
     departure_time: now
