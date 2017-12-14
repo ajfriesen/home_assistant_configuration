@@ -23,6 +23,11 @@ flash_room1:
 start_frodolin:
   alias: 'Gentle vacuum start'
   sequence:
+    - alias: notify
+      service: notify.hassnote
+      data:
+        title: "Frödolin"
+        message: "Ich fang an zu saugen!"
     - alias: Start
       service: vacuum.turn_on
       data:
