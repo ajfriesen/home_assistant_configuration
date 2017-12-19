@@ -83,6 +83,12 @@ vacuum:
     token: !secret xiaomi_api_key
     name: Frödolin
 
+panel_iframe:
+  configurator:
+    title: Configurator
+    icon: mdi:wrench
+    url: !secret base_configurator_url
+
 counter:
   vacuum_today:
     initial: 0
