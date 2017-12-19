@@ -83,6 +83,11 @@ vacuum:
     token: !secret xiaomi_api_key
     name: Frödolin
 
+counter:
+  vacuum_today:
+    initial: 0
+    step: 1
+
 # Includes
 
 # input_boolean: !include input_boolean.yaml
