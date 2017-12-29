@@ -42,3 +42,19 @@ device_tracker.fritzbox:
   hidden: true
 device_tracker.switch:
   hidden: true
+
+group.all_automations:
+  hidden: false
+  friendly_name: 'Automations'
+group.all_scripts:
+  hidden: false
+  friendly_name: 'Scripts'
+group.all_lights:
+  hidden: false
+  friendly_name: 'All Lights'
+group.all_vacuum_cleaners:
+  hidden: false
+  friendly_name: 'Frödolin'
+group.all_switches:
+  hidden: false
+  friendly_name: 'All Switches'
