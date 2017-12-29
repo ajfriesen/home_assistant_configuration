@@ -99,7 +99,7 @@ counter:
 
 # Includes
 
-# input_boolean: !include input_boolean.yaml
+input_boolean: !include input_boolean.yaml
 # script: !include_dir_named scripts/
 input_number: !include input_number.yaml
 script: !include scripts.yaml
