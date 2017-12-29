@@ -1,0 +1,10 @@
+# Sonoff Basic
+
+platform: mqtt
+name: Cube
+command_topic: "cmnd/living-room/cube/power"
+state_topic: "stat/living-room/cube/POWER"
+payload_on: "ON"
+payload_off: "OFF"
+qos: "1"
+retain: true
