@@ -87,6 +87,11 @@ panel_iframe:
     icon: mdi:wrench
     url: !secret base_configurator_url
 
+camera:
+  - platform: local_file
+    name: Freifunk
+    file_path: https://ajfriesen.duckdns.org/local/Freifunk.png
+
 counter:
   vacuum_today:
     initial: 0
