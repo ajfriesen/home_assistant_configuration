@@ -1,0 +1,10 @@
+# Sonoff S20
+
+platform: mqtt
+name: 'Kitchen Socket'
+command_topic: "cmnd/kitchen/socket/power"
+state_topic: "stat/kitchen/socket/POWER"
+payload_on: "ON"
+payload_off: "OFF"
+qos: "1"
+retain: true
