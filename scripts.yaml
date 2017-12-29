@@ -44,3 +44,7 @@ start_frodolin:
       data:
         fan_speed: 'Max'
         entity_id: vacuum.frodolin
+    - alias: Increment Vacuum Counter
+      service: counter.increment
+      data:
+        entity_id: counter.vacuum_today
