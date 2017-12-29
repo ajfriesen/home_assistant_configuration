@@ -10,7 +10,7 @@ condition:
     state: 'on'
   - condition: state
     entity_id: sensor.someone_is_home
-    state: "no"
+    state: 'no'
 action:
   service: script.start_frodolin
 
