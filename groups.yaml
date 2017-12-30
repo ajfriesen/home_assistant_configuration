@@ -54,7 +54,7 @@ living_room:
 bedroom:
   name: 'Bedroom'
   entities:
-    - light.bedroom
+    - light.bedroomceiling
 
 theresas_room:
   name: 'Theresas Room'
