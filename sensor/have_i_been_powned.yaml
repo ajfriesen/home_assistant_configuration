@@ -1,0 +1,5 @@
+platform: haveibeenpwned
+email:
+  - !secret mail_andrej1
+  - !secret mail_theresa1
+  - !secret mail_theresa2
