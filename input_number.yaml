@@ -5,6 +5,8 @@ porch_animation_speed:
   max: 150
   step: 10
 
+# Alarm for Kitchen Socket
+
 alarmhour_kichten_socket:
   name: Hour
   icon: mdi:timer
@@ -13,6 +15,7 @@ alarmhour_kichten_socket:
   max: 23
   step: 1
   mode: slider
+
 alarmminutes_kitchen_socket:
   name: Minutes
   icon: mdi:timer
@@ -21,3 +24,21 @@ alarmminutes_kitchen_socket:
   max: 59
   step: 1
   mode: slider
+
+# Alarm for Wake up Light
+
+alarmhour:
+  name: Hour
+  icon: mdi:timer
+  initial: 6
+  min: 0
+  max: 23
+  step: 1
+
+alarmminutes:
+  name: Minutes
+  icon: mdi:timer
+  initial: 30
+  min: 0
+  max: 59
+  step: 1
