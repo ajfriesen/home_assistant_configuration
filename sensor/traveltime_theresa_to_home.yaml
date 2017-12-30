@@ -1,0 +1,8 @@
+platform: google_travel_time
+api_key: !secret google_maps_key
+origin: device_tracker.theresa_motog3
+destination: zone.home
+name: "Theresa to Home"
+options:
+  mode: bicycling
+  departure_time: now
