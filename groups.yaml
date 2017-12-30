@@ -127,3 +127,13 @@ kitchen_socker_timer:
     - sensor.alarm_time_kitchen_socket
     - input_number.alarmhour_kichten_socket
     - input_number.alarmminutes_kitchen_socket
+
+alarmclock:
+  name: Wake Me Up
+  view: yes
+  entities: 
+    - sensor.alarm_time
+    - input_number.alarmhour
+    - input_number.alarmminutes
+    - input_boolean.alarmweekday
+    - input_boolean.alarmweekon

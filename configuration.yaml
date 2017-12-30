@@ -88,9 +88,9 @@ panel_iframe:
     url: !secret base_configurator_url
 
 camera:
-  - platform: local_file
-    name: Freifunk
-    file_path: https://ajfriesen.duckdns.org/local/Freifunk.png
+  - platform: generic
+    # name: Freifunk
+    still_image_url: https://127.0.0.1:8123/local/Freifunk.png
 
 counter:
   vacuum_today:
