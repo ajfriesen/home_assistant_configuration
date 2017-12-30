@@ -1,0 +1,5 @@
+platform: template
+sensors:
+  someone_is_home:
+    friendly_name: "Someone is home"
+    value_template: '{% if "home" in [states.device_tracker.andrej_oneplus5t.state, states.device_tracker.theresa_motog3.state] %}yes{% else %}no{% endif %}'
