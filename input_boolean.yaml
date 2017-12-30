@@ -1,0 +1,3 @@
+kitchen_timer_active:
+  name: 'Activate Kitchen Timer'
+  initial: off

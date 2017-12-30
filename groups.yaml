@@ -54,7 +54,7 @@ living_room:
 bedroom:
   name: 'Bedroom'
   entities:
-    - light.bedroom
+    - light.bedroomceiling
 
 theresas_room:
   name: 'Theresas Room'
@@ -72,11 +72,15 @@ kitchen:
   name: 'Kitchen'
   # view: yes
   entities:
-    - switch.kitchen_socket
     - switch.washing_machine
     - sensor.washing_machine_wattage
     - sensor.washing_machine_voltage
     - sensor.washing_machine_current
+    - switch.kitchen_socket
+    - input_boolean.kitchen_timer_active
+    - sensor.alarm_time_kitchen_socket
+    - input_number.alarmhour_kichten_socket
+    - input_number.alarmminutes_kitchen_socket
 
 floor:
   name: 'Floor'
@@ -113,3 +117,13 @@ freifunk:
   name: 'Freifunk'
   entities:
     - camera.freifunk
+
+kitchen_socker_timer:
+  name: Kitchen Timer
+  view: yes
+  entities:
+    - switch.kitchen_socket
+    - input_boolean.kitchen_timer_active
+    - sensor.alarm_time_kitchen_socket
+    - input_number.alarmhour_kichten_socket
+    - input_number.alarmminutes_kitchen_socket

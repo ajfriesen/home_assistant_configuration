@@ -1,0 +1,20 @@
+alias: "Turn on Kitchen Socket"
+trigger:
+  - platform: time
+    minutes: '/1'
+    seconds: 0
+condition:
+  - condition: state
+    entity_id: input_boolean.kitchen_timer_active
+    state: 'on'
+  - condition: template
+    value_template: '{{ now().strftime("%H:%M") == states.sensor.alarm_time_kitchen_socket.state }}'
+action:
+  - service: switch.turn_on
+    entity_id: switch.kitchen_socket
+  - service: notify.hassnote
+    data:
+      title: "Reiskocher"
+      message: "Ich fang an zu kochen!"
+  - service: input_boolean.turn_off
+    entity_id: input_boolean.kitchen_timer_active
