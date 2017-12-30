@@ -1,0 +1,25 @@
+alias: "Wake me up with bedroom light transition for weekend days"
+trigger:
+  - platform: time
+    minutes: '/1'
+    seconds: 0
+condition:
+  - condition: state
+    entity_id: input_boolean.alarmweekon
+    state: 'on'
+  - condition: state
+    entity_id: input_boolean.alarmweekday
+    state: 'off'
+  - condition: time
+    weekday:
+      - sat
+      - sun
+  - condition: template
+    value_template: '{{ now().strftime("%H:%M") == states.sensor.alarm_time.state }}'
+action:
+  service: light.turn_on
+  entity_id:
+  light.bedroom
+  data:
+    transition: 600
+    brightness: 255
