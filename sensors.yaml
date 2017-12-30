@@ -79,3 +79,15 @@
   state_topic: "tele/kitchen/washing-machine/ENERGY"
   value_template: "{{ value_json.Current }}"
   unit_of_measurement: "A"
+
+- platform: template
+  sensors:
+    alarm_time_kitchen_socket:
+      friendly_name: 'Kitchen Socket Start Time'
+      value_template: '{{ "%0.02d:%0.02d" | format(states("input_number.alarmhour_kichten_socket") | int, states("input_number.alarmminutes_kitchen_socket") | int) }}'
+      icon_template: >-
+          {% if is_state('switch.kitchen_socket', 'on') %}
+            mdi:timer
+          {% else %}
+            mdi:timer-off
+          {% endif %}
