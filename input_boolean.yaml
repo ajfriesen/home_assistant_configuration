@@ -3,10 +3,10 @@ kitchen_timer_active:
   initial: off
 
 alarmweekday:
-  name: Weekdays 
+  name: Weekdays
   initial: on
   icon: mdi:calendar
 
 alarmweekon:
-  name: Active     
+  name: Active
   initial: on
