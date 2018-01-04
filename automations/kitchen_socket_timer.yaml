@@ -1,4 +1,6 @@
 alias: "Turn on Kitchen Socket"
+hide_entity: true
+initial_state: false
 trigger:
   - platform: time
     minutes: '/1'
