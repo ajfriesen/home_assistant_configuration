@@ -11,31 +11,8 @@ condition:
   - condition: state
     entity_id: sensor.someone_is_home
     state: 'no'
+  - condition: state
+    entity_id: counter.vacuum_today
+    state: '0'
 action:
   service: script.start_frodolin
-
-
-
-#
-# alias: gentle and automatic vacuum start
-# trigger:
-# - platform: time
-#   at: '11:00:00'
-# condition:
-#   condition: state
-#   entity_id: 'binary_sensor.workday_sensor'
-#   state: 'on'
-# action:
-# - service: vacuum.turn_on
-#   data:
-#     entity_id: vacuum.xiaomi_vacuum_cleaner
-# - service: vacuum.set_fan_speed
-#   data:
-#     fan_speed: Quiet
-#     entity_id: vacuum.xiaomi_vacuum_cleaner
-# - delay:
-#     seconds: 15
-# - service: vacuum.set_fan_speed
-#   data:
-#     fan_speed: Max
-#     entity_id: vacuum.xiaomi_vacuum_cleaner
