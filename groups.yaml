@@ -72,6 +72,7 @@ kitchen:
   name: 'Kitchen'
   # view: yes
   entities:
+    - light.light_string_vase
     - switch.washing_machine
     - sensor.washing_machine_wattage
     - sensor.washing_machine_voltage
@@ -137,3 +138,13 @@ alarmclock:
     - input_number.alarmminutes
     - input_boolean.alarmweekday
     - input_boolean.alarmweekon
+
+social:
+  name: 'Quality Time'
+  view: yes
+  entities:
+    - counter.going_out
+    - script.increment_going_out
+    - script.eat_out
+    - script.wine_and_dine
+    - script.coffee_and_cake
