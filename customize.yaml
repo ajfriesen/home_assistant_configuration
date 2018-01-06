@@ -58,3 +58,45 @@ group.all_vacuum_cleaners:
 group.all_switches:
   hidden: false
   friendly_name: 'All Switches'
+
+script.eat_out:
+  icon: mdi:food
+
+script.wine_and_dine:
+  icon: mdi:food-variant
+
+script.coffee_and_cake:
+  icon: mdi:coffee
+
+script.increment_going_out:
+  icon: mdi:plus-one
+
+script.start_frodolin:
+  icon: mdi:play
+
+counter.vacuum_today:
+  icon: mdi:calendar-today
+
+sensor.andrej_to_home:
+  icon: mdi:home
+
+sensor.andrej_to_work:
+  icon: mdi:domain
+
+sensor.theresa_to_home:
+  icon: mdi:home
+
+sensor.theresa_to_work:
+  icon: mdi:domain
+
+sensor.washing_machine_current:
+  icon: mdi:washing-machine
+
+sensor.washing_machine_wattage:
+  icon: mdi:washing-machine
+
+sensor.washing_machine_voltage:
+  icon: mdi:washing-machine
+
+switch.kitchen_socket:
+  icon: mdi:power-socket-eu
