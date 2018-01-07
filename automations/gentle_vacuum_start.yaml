@@ -1,16 +1,12 @@
-alias: 'gentle and automatic vacuum start'
+alias: 'Start vacuum once a day when nobody is home'
 trigger:
-  - platform: time
-    at: "10:00:00"
-condition:
-  condition: and
-  conditions:
-  - condition: state
-    entity_id: binary_sensor.workday_sensor
-    state: 'on'
-  - condition: state
+  - platform: state
     entity_id: sensor.someone_is_home
-    state: 'no'
+    from: 'true'
+    to: 'false'
+    for:
+      minutes: 10
+condition:
   - condition: state
     entity_id: counter.vacuum_today
     state: '0'
