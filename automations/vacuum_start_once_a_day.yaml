@@ -1,0 +1,14 @@
+alias: 'Start vacuum once a day when nobody is home'
+trigger:
+  - platform: state
+    entity_id: sensor.someone_is_home
+    from: 'yes'
+    to: 'no'
+    for:
+      minutes: 10
+condition:
+  - condition: state
+    entity_id: counter.vacuum_today
+    state: '0'
+action:
+  service: script.start_frodolin
