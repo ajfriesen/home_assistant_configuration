@@ -2,8 +2,8 @@ alias: 'Start vacuum once a day when nobody is home'
 trigger:
   - platform: state
     entity_id: sensor.someone_is_home
-    from: 'true'
-    to: 'false'
+    from: 'yes'
+    to: 'no'
     for:
       minutes: 10
 condition:
