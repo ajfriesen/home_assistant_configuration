@@ -2,11 +2,12 @@ kitchen_timer_active:
   name: 'Activate Kitchen Timer'
   initial: off
 
-alarmweekday:
+alarm_active_weekday:
   name: Weekdays
   initial: on
   icon: mdi:calendar
 
-alarmweekon:
-  name: Active
-  initial: on
+alarm_active_weekend:
+  name: Weekend
+  initial: off
+  icon: mdi:calendar
