@@ -17,14 +17,17 @@ I am using Home Assistant with [HASS.IO](https://home-assistant.io/) on a Raspbe
 List of my current used hardware:
 
 - Sonoff devices with [Tasmota Firmware](https://github.com/arendst/Sonoff-Tasmota)
-  - 2 Sonoff S20
-  - 3 Sonoff POW
+  - 2 x [Sonoff S20](http://sonoff.itead.cc/en/products/residential/s20-socket)
+  - 3 x [Sonoff POW](http://sonoff.itead.cc/en/products/sonoff/sonoff-pow)
     - Washing machine
-  - 6 Sonfoff Basics
+  - 6 x [Sonfoff Basics](http://sonoff.itead.cc/en/products/sonoff/sonoff-basic)
     - All 6 are used for lights
-- 2 Phillips Hue bulps with one bridge
+- Phillips Hue
+  - 1 x Bridge
+  - 2x normal E27 bulps
 - Fritz Box Router
 - Xiaomi vacuum generation one
+-3 x Google Chromecast Audio
 
 ## Features I use with Home Assistant
 
@@ -38,7 +41,7 @@ List of my current used hardware:
 - Traveltime for me an my significant other
   - To hork
   - To home
-- Charging station in bathroom for some hardware:
+- Charging station in bathroom for some devices:
   - Bluetooth speaker
   - Razor
   - Tooth brush
@@ -50,4 +53,4 @@ List of my current used hardware:
 
 ## More information
 
-I want to write down my home assistant journey in blog (german) called: [heim.equipment](https://heim.equipment)
+I want to write down my home assistant journey in blog a (german) called: [heim.equipment](https://heim.equipment)
