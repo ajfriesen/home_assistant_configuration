@@ -119,7 +119,6 @@ input_boolean: !include input_boolean.yaml
 script: !include_dir_merge_named scripts/
 input_number: !include input_number.yaml
 sensor: !include_dir_list sensor/
-# sensor: !include sensors.yaml
 zone: !include zones.yaml
 group: !include_dir_merge_named group/
 switch: !include_dir_list switches/
