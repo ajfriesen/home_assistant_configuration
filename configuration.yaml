@@ -50,6 +50,7 @@ logbook:
 # Text to speech
 tts:
   - platform: google
+    language: 'de'
 
 sun:
 
