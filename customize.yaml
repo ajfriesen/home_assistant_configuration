@@ -42,61 +42,110 @@ device_tracker.fritzbox:
   hidden: true
 device_tracker.switch:
   hidden: true
-
 group.all_automations:
   hidden: false
-  friendly_name: 'Automations'
+  friendly_name: Alle Automationen
 group.all_scripts:
   hidden: false
-  friendly_name: 'Scripts'
+  friendly_name: Alle Scripte
 group.all_lights:
   hidden: false
-  friendly_name: 'All Lights'
+  friendly_name: Alle Lichter
 group.all_vacuum_cleaners:
   hidden: false
-  friendly_name: 'Frödolin'
+  friendly_name: Staubsauger
 group.all_switches:
   hidden: false
-  friendly_name: 'All Switches'
+  friendly_name: Alle Schalter
 
 script.eat_out:
+  friendly_name: Essen gehen
   icon: mdi:food
-
 script.wine_and_dine:
+  friendly_name: Richtig fein Essen gehen
   icon: mdi:food-variant
-
 script.coffee_and_cake:
+  friendly_name: Kaffee und Kuchen
   icon: mdi:coffee
-
 script.increment_going_out:
+  friendly_name: Ein Pluspunkt
   icon: mdi:plus-one
 
-script.start_frodolin:
-  icon: mdi:play
-
-counter.vacuum_today:
-  icon: mdi:calendar-today
-
-sensor.andrej_to_home:
-  icon: mdi:home
-
-sensor.andrej_to_work:
-  icon: mdi:domain
-
-sensor.theresa_to_home:
-  icon: mdi:home
-
-sensor.theresa_to_work:
-  icon: mdi:domain
 
 sensor.washing_machine_current:
+  friendly_name: 'Waschmaschine Ampere (A)'
   icon: mdi:washing-machine
-
 sensor.washing_machine_wattage:
+  friendly_name: 'Waschmaschine Watt (W)'
   icon: mdi:washing-machine
-
-sensor.washing_machine_voltage:
+sensor.washing_machine_voltage: 
+  friendly_name: 'Waschmaschine Spannung (V)'
   icon: mdi:washing-machine
-
 switch.kitchen_socket:
+  friendly_name: 'Küchen Steckdose'
   icon: mdi:power-socket-eu
+input_boolean.kitchen_timer_active:
+  friendly_name: 'Küchen Timer aktiv'
+  icon: mdi:power
+# input_boolean.kitchen_timer_start_time
+
+light.bedroomceiling:
+  friendly_name: Schlafzimmer
+light.cube:
+  friendly_name: Würfel
+light.globe:
+  friendly_name: Globus
+light.floor_lamp:
+  friendly_name: Stehlampe
+light.floorceiling:
+  friendly_name: Flur
+light.light_string_bed:
+  friendly_name: Lichterkette Bett
+light.light_string_vase:
+  friendly_name: Lichterkette Vase
+light.star:
+  friendly_name: Stern
+
+counter.vacuum_today:
+  friendly_name: 'Wie oft wurde heute gesaugt?'
+  icon: mdi:calendar-today
+script.start_frodolin:
+  friendly_name: Los Frödolin
+  icon: mdi:pokeball
+
+counter.going_out:
+  friendly_name: 'Ausgehepunkte'
+
+switch.bathroom_socket:
+  friendly_name: 'Badezimmer Steckdose'
+
+
+device_tracker.andrej_oneplus5t:
+  friendly_name: Andrej
+sensor.andrej_to_home_by_bike:
+  friendly_name: Mit Fahrrad nach Hause
+  icon: mdi:home-automation
+sensor.andrej_to_home_by_car:
+  friendly_name: Mit Auto nach Hause
+  icon: mdi:home-automation
+sensor.andrej_to_home_by_transit:
+  friendly_name: Mit Bahn nach Hause
+  icon: mdi:home-automation
+sensor.andrej_to_work_by_bike:
+  friendly_name: Mit Fahrrad zur Arbeit
+  icon: mdi:domain
+sensor.andrej_to_work_by_car:
+  friendly_name: Mit Auto zur Arbeit
+  icon: mdi:domain
+sensor.andrej_to_work_by_transit:
+  friendly_name: Mit Bahn zur Arbeit
+  icon: mdi:domain
+
+device_tracker.theresa_motog3:
+  friendly_name: Theresa
+sensor.theresa_to_work_by_bike:
+  friendly_name: Mit dem Fahrrad zur Arbeit
+  icon: mdi:domain
+sensor.theresa_to_home_by_bike:
+  friendly_name: Mit dem Fahrrad nach Hause
+  icon: mdi:home-heart
