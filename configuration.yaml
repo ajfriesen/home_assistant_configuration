@@ -39,7 +39,7 @@ updater:
 discovery:
 
 # Allows you to issue voice commands from the frontend in enabled browsers
-conversation:
+# conversation:
 
 # Enables support for tracking state changes over time
 history:
@@ -50,6 +50,7 @@ logbook:
 # Text to speech
 tts:
   - platform: google
+    language: 'de'
 
 sun:
 
@@ -105,24 +106,17 @@ google_assistant:
   project_id: !secret google_assistant_project_id
   client_id: !secret google_assistant_client_id
   access_token: !secret google_assistant_access_token
-#   agent_user_id: [a string to identify user]
-#   api_key: [an API Key generated for the Google Actions project]
-  exposed_domains:
-    - switch
-    - light
-    - group
+  agent_user_id: !secret google_assistant_agent_user_id
+  api_key: !secret google_assistant_api_key
 
 # Includes
 
 input_boolean: !include input_boolean.yaml
-# script: !include_dir_named scripts/
+script: !include_dir_merge_named scripts/
 input_number: !include input_number.yaml
-script: !include scripts.yaml
 sensor: !include_dir_list sensor/
-# sensor: !include sensors.yaml
 zone: !include zones.yaml
-group: !include groups.yaml
-# group: !include_dir_merge_named group/
+group: !include_dir_merge_named group/
 switch: !include_dir_list switches/
 light: !include_dir_list lights/
 automation: !include_dir_list automations/

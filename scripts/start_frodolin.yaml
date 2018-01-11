@@ -1,0 +1,28 @@
+start_frodolin:
+  alias: 'Gentle vacuum start'
+  sequence:
+    - alias: notify
+      service: notify.hassnote
+      data:
+        title: "Frödolin"
+        message: "Ich fang an zu saugen!"
+    - alias: Start
+      service: vacuum.turn_on
+      data:
+        entity_id: vacuum.frodolin
+    - alias: 'Change to quiet'
+      service: vacuum.set_fan_speed
+      data:
+        fan_speed: "Quiet"
+        entity_id: vacuum.frodolin
+    - delay:
+        seconds: 15
+    - alias: 'Change to Max'
+      service: vacuum.set_fan_speed
+      data:
+        fan_speed: 'Max'
+        entity_id: vacuum.frodolin
+    - alias: Increment Vacuum Counter
+      service: counter.increment
+      data:
+        entity_id: counter.vacuum_today

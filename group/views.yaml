@@ -1,0 +1,57 @@
+default_view:
+  view: yes
+  icon: mdi:home
+  entities:
+    - group.theresa_info
+    - group.andrej_info
+    - group.bedroom
+    - group.living_room
+    - group.theresas_room
+    - group.kitchen
+    - group.floor
+    - group.bathroom
+    - group.frodolin
+
+admin_view:
+  name: 'Admin'
+  view: yes
+  icon: mdi:settings
+  entities:
+    - group.internet_speed
+    - group.all_automations
+    - group.all_scripts
+    - group.certificate
+    - group.haveibeenpwned
+    - group.all_lights
+    - group.all_switches
+    - group.freifunk
+
+kitchen_socker_timer:
+  name: 'Küchen Timer'
+  view: yes
+  entities:
+    - switch.kitchen_socket
+    - input_boolean.kitchen_timer_active
+    - sensor.alarm_time_kitchen_socket
+    - input_number.alarmhour_kichten_socket
+    - input_number.alarmminutes_kitchen_socket
+
+alarmclock:
+  name: 'Licht Wecker'
+  view: yes
+  entities: 
+    - sensor.alarm_time
+    - input_number.alarmhour
+    - input_number.alarmminutes
+    - input_boolean.alarm_active_weekday
+    - input_boolean.alarm_active_weekend
+
+social:
+  name: 'Quality Time'
+  view: yes
+  entities:
+    - counter.going_out
+    - script.increment_going_out
+    - script.eat_out
+    - script.wine_and_dine
+    - script.coffee_and_cake

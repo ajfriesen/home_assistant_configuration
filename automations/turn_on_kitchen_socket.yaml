@@ -1,0 +1,16 @@
+alias: "Turn on kitchen socket"
+hide_entity: true
+initial_state: true
+trigger:
+  - platform: time
+    at: '00:01:00'
+condition:
+  - condition: time
+    weekday:
+      - thu
+action:
+  - service: switch.turn_on
+    entity_id: switch.kitchen_socket
+  - delay: '08:00:00'
+  - service: switch.turn_off
+    entity_id: switch.kitchen_socket

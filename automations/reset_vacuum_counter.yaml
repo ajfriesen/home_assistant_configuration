@@ -3,7 +3,7 @@ hide_entity: true
 initial_state: true
 trigger:
   platform: time
-  at: "23:59:00:00"
+  at: "23:59:00"
 action:
   service: counter.reset
   entity_id: counter.vacuum_today

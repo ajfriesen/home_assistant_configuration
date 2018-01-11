@@ -1,8 +1,8 @@
 platform: google_travel_time
 api_key: !secret google_maps_key
 origin: device_tracker.andrej_oneplus5t
-destination: zone.his_work
-name: "Andrej to Work"
+destination: zone.home
+name: "Andrej to home by transit"
 options:
-  mode: driving
+  mode: transit
   departure_time: now

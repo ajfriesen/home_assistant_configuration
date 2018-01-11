@@ -1,0 +1,7 @@
+eat_out:
+  alias: 'Eat out (-2)'
+  sequence:
+    - service: counter.decrement
+      entity_id: counter.going_out
+    - service: counter.decrement
+      entity_id: counter.going_out

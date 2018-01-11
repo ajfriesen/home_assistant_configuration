@@ -1,0 +1,17 @@
+morning_light:
+  alias: 'Set lights for the morning'
+  sequence:
+    - alias: 'Set hue lights'
+      service: light.turn_on
+      data:
+        brightness_pct: '1'
+        entity_id:
+          - light.bedroomceiling
+          - light.floorceiling
+    - alias: 'Set normal light switchtes'
+      service: light.turn_on
+      entity_id:
+        - light.light_string_bed
+        - light.star
+        - light.globe
+        - light.light_string_vase
