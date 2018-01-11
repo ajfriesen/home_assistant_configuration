@@ -115,9 +115,8 @@ google_assistant:
 # Includes
 
 input_boolean: !include input_boolean.yaml
-# script: !include_dir_named scripts/
+script: !include_dir_merge_named scripts/
 input_number: !include input_number.yaml
-script: !include scripts.yaml
 sensor: !include_dir_list sensor/
 # sensor: !include sensors.yaml
 zone: !include zones.yaml

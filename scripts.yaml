@@ -1,24 +1,24 @@
 flash_all_lights:
-    alias: Flash All Lights
-    sequence:
-      - alias: Light on
-        service: homeassistant.turn_on
-        data:
-          entity_id: light.all
-      - delay:
-          # time for flash light on
-          seconds: 1
-      - alias: Light off
-        service: homeassistant.turn_off
-        data:
-          entity_id: light.all
-      - delay:
-          # time for flash light off
-          seconds: 1
-      - alias: loop_flash_all_lights
-        service: script.turn_on
-        data:
-          entity_id: script.flash_all_light
+  alias: Flash All Lights
+  sequence:
+    - alias: Light on
+      service: homeassistant.turn_on
+      data:
+        entity_id: light.all
+    - delay:
+        # time for flash light on
+        seconds: 1
+    - alias: Light off
+      service: homeassistant.turn_off
+      data:
+        entity_id: light.all
+    - delay:
+        # time for flash light off
+        seconds: 1
+    - alias: loop_flash_all_lights
+      service: script.turn_on
+      data:
+        entity_id: script.flash_all_light
 
 start_frodolin:
   alias: 'Gentle vacuum start'

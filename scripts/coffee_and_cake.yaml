@@ -1,0 +1,5 @@
+coffee_and_cake:
+  alias: 'Coffee and Cake (-1)'
+  sequence:
+    - service: counter.decrement
+      entity_id: counter.going_out
