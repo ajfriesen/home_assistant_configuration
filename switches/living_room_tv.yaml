@@ -1,0 +1,10 @@
+# Sonoff POW
+
+platform: mqtt
+name: 'TV'
+command_topic: "cmnd/tv/power"
+state_topic: "stat/tv/POWER"
+payload_on: "ON"
+payload_off: "OFF"
+qos: "1"
+retain: true

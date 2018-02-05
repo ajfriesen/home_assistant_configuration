@@ -1,0 +1,5 @@
+platform: mqtt
+name: "TV Current"
+state_topic: "tele/tv/ENERGY"
+value_template: "{{ value_json.Current }}"
+unit_of_measurement: "A"
