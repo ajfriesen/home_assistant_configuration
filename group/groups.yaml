@@ -16,7 +16,6 @@ andrej_info:
     - sensor.andrej_to_work_by_car
     - sensor.andrej_to_work_by_transit
 
-
 living_room:
   name: 'Wohnzimmer'
   entities:
@@ -43,18 +42,12 @@ bathroom:
 
 kitchen:
   name: 'Küche'
-  # view: yes
   entities:
     - light.light_string_vase
     - switch.washing_machine
     - sensor.washing_machine_wattage
     - sensor.washing_machine_voltage
     - sensor.washing_machine_current
-    - switch.kitchen_socket
-    - input_boolean.kitchen_timer_active
-    - sensor.alarm_time_kitchen_socket
-    - input_number.alarmhour_kichten_socket
-    - input_number.alarmminutes_kitchen_socket
 
 floor:
   name: 'Flur'
@@ -90,4 +83,3 @@ frodolin:
 freifunk:
   name: 'Freifunk'
   entities:
-    - camera.freifunk
