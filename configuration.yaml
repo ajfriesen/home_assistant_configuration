@@ -95,7 +95,6 @@ camera:
 
 counter:
   vacuum_today:
-    initial: 0
     step: 1
   going_out:
     icon: mdi:human-male-female
