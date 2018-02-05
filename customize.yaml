@@ -89,22 +89,35 @@ input_boolean.kitchen_timer_active:
   icon: mdi:power
 # input_boolean.kitchen_timer_start_time
 
+switch.washing_machine:
+  friendly_name: Washmaschine
+  icon: mdi:washing-machine
+switch.tv:
+  friendly_name: Fernsehr
+  icon: mdi:television-classic
+
 light.bedroomceiling:
   friendly_name: Schlafzimmer
+  icon: mdi:ceiling-light
 light.cube:
   friendly_name: Würfel
+  icon: mdi:cube-outline
 light.globe:
   friendly_name: Globus
+  icon: mdi:earth
 light.floor_lamp:
   friendly_name: Stehlampe
+  icon: mdi:lamp
 light.floorceiling:
   friendly_name: Flur
+  icon: mdi:ceiling-light
 light.light_string_bed:
   friendly_name: Lichterkette Bett
 light.light_string_vase:
   friendly_name: Lichterkette Vase
 light.star:
   friendly_name: Stern
+  icon: mdi:star
 
 counter.vacuum_today:
   friendly_name: 'Wie oft wurde heute gesaugt?'
@@ -118,6 +131,7 @@ counter.going_out:
 
 switch.bathroom_socket:
   friendly_name: 'Badezimmer Steckdose'
+  icon: mdi:power-socket-eu
 
 
 device_tracker.andrej_oneplus5t:
