@@ -26,7 +26,14 @@ http:
 
 binary_sensor:
   - platform: workday
+    name: workday_today
     country: DE
+    province: NW
+  - platform: workday
+    name: workday_tomorrow
+    country: DE
+    province: NW
+    days_offset: '1'
 
 # Maria DB
 recorder:
@@ -95,7 +102,6 @@ camera:
 
 counter:
   vacuum_today:
-    initial: 0
     step: 1
   going_out:
     icon: mdi:human-male-female

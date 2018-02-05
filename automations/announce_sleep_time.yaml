@@ -1,0 +1,15 @@
+alias: 'Es ist Schlafenzeit'
+hide_entity: true
+initial_state: true
+trigger:
+  platform: time
+  at: "22:30:00"
+condition:
+  - condition: state
+    entity_id: binary_sensor.workday_tomorrow
+    state: 'on'
+action:
+  service: tts.google_say
+  entity_id: media_player.uberall
+  data:
+    message: 'Bitte macht euch langsam fertig zum schlafen gehen!'

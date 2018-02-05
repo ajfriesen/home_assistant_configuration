@@ -16,13 +16,13 @@ andrej_info:
     - sensor.andrej_to_work_by_car
     - sensor.andrej_to_work_by_transit
 
-
 living_room:
   name: 'Wohnzimmer'
   entities:
     - light.cube
     - light.star
     - media_player.kodi
+    - switch.tv
 
 bedroom:
   name: 'Schlafzimmer'
@@ -43,18 +43,12 @@ bathroom:
 
 kitchen:
   name: 'Küche'
-  # view: yes
   entities:
     - light.light_string_vase
     - switch.washing_machine
     - sensor.washing_machine_wattage
     - sensor.washing_machine_voltage
     - sensor.washing_machine_current
-    - switch.kitchen_socket
-    - input_boolean.kitchen_timer_active
-    - sensor.alarm_time_kitchen_socket
-    - input_number.alarmhour_kichten_socket
-    - input_number.alarmminutes_kitchen_socket
 
 floor:
   name: 'Flur'
@@ -91,3 +85,11 @@ freifunk:
   name: 'Freifunk'
   entities:
     - camera.freifunk
+
+wakeup_light:
+  name: 'Wakeup Light'
+  view: yes
+  entities:
+    - automation.porch_animation_speed
+    - input_number.porch_animation_speed
+    - light.porch_strip
