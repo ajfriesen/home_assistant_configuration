@@ -8,7 +8,7 @@ condition:
     entity_id: input_boolean.alarm_active_weekday
     state: 'on'
   - condition: state
-    entity_id: binary_sensor.workday_sensor
+    entity_id: binary_sensor.workday_today
     state: 'on'
   - condition: time
     weekday:
