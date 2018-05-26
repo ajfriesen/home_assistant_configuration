@@ -50,7 +50,3 @@ List of my current used hardware:
 - Check my internet provider with speedtest.net
 - Google Assistant to control some switches, lights, etc.
 - Use the the [HASS Configurator](https://home-assistant.io/addons/configurator/) Add-On for [HASS.IO](https://home-assistant.io/)
-
-## More information
-
-I want to write down my home assistant journey in blog a (german) called: [heim.equipment](https://heim.equipment)
