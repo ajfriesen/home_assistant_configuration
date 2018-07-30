@@ -155,7 +155,7 @@ sensor.andrej_to_work_by_transit:
   friendly_name: Mit Bahn zur Arbeit
   icon: mdi:domain
 
-device_tracker.theresa_motog3:
+device_tracker.theresa_nokia6:
   friendly_name: Theresa
 sensor.theresa_to_work_by_bike:
   friendly_name: Mit dem Fahrrad zur Arbeit

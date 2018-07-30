@@ -1,7 +1,7 @@
 theresa_info:
   name: 'Theresa'
   entities:
-    - device_tracker.theresa_motog3
+    - device_tracker.theresa_nokia6
     - sensor.theresa_to_work_by_bike
     - sensor.theresa_to_home_by_bike
 
