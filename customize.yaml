@@ -118,6 +118,9 @@ light.light_string_vase:
 light.star:
   friendly_name: Stern
   icon: mdi:star
+switch.fan:
+  friendly_name: Ventilator
+  icon: mdi:fan
 
 counter.vacuum_today:
   friendly_name: 'Wie oft wurde heute gesaugt?'

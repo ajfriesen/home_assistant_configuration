@@ -28,6 +28,7 @@ bedroom:
   name: 'Schlafzimmer'
   entities:
     - light.bedroomceiling
+    - switch.fan
 
 theresas_room:
   name: 'Theresas Zimmer'
