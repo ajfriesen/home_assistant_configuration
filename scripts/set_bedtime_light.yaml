@@ -1,0 +1,19 @@
+set_bedtime_light:
+  alias: 'Set bedtime light'
+  sequence:
+    - alias: 'Turn on bedroom light'
+      service: light.turn_on
+      data:
+        brightness_pct: '10'
+        entity_id:
+          - light.bedroomceiling
+          - light.floorceiling
+    - alias: 'Turn off other lights'
+      service: light.turn_off
+      entity_id:
+        - light.light_string_bed
+        - light.star
+        - light.globe
+        - light.light_string_vase
+        - light.floorceiling
+        - light.cube
