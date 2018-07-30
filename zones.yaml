@@ -7,5 +7,5 @@
 - name: His Work
   latitude: !secret work_latitude_andrej
   longitude: !secret work_longitude_andrej
-  radius: 250
+  radius: 150
   icon: mdi:company
