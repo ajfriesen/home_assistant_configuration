@@ -1,0 +1,7 @@
+binary_sensor:
+  - platform: trend
+    sensors:
+      washing_machine_ready:
+        entity_id: sensor.washing_machine_wattage
+        max_samples: 5
+        friendly_name: 'Waschmaschine fertig'

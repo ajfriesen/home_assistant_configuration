@@ -7,3 +7,6 @@ tts/
 known_devices.yaml
 ip_bans.yaml
 snippets/
+.storage/
+.vscode/
+home-assistant_*.db
