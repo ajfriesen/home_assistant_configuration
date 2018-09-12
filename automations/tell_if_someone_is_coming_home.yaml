@@ -1,0 +1,13 @@
+alias: 'Sag Bescheid, dass jemand nach Hause kommt'
+hide_entity: true
+initial_state: true
+trigger:
+  - platform: state
+    entity_id: sensor.someone_is_home
+    from: 'no'
+    to: 'yes'
+action:
+  service: tts.google_say
+  entity_id: media_player.uberall
+  data:
+    message: 'Es ist gerade ein Tatz angekommen!'

@@ -5,7 +5,4 @@ trigger:
   event: sunset
   offset: '-00:45:00'
 action:
-  - service: light.turn_on
-    entity_id:
-      - light.star
-      - light.light_string_bed
+  - service: script.evening_light

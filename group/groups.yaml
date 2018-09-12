@@ -94,3 +94,10 @@ wakeup_light:
     - automation.porch_animation_speed
     - input_number.porch_animation_speed
     - light.porch_strip
+
+light_scenes:
+  name: 'Licht Scenen'
+  entities:
+    - script.morning_light
+    - script.evening_light
+    - script.set_bedtime_light

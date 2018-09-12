@@ -4,6 +4,7 @@ default_view:
   entities:
     - group.theresa_info
     - group.andrej_info
+    - group.light_scenes
     - group.bedroom
     - group.living_room
     - group.theresas_room

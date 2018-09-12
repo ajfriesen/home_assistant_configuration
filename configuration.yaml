@@ -35,9 +35,6 @@ binary_sensor:
     province: NW
     days_offset: '1'
 
-# Maria DB
-recorder:
-  db_url: !secret maria_db_url
 
 updater:
   include_used_components: true
@@ -95,10 +92,6 @@ panel_iframe:
     icon: mdi:wrench
     url: !secret base_configurator_url
 
-camera:
-  - platform: generic
-    # name: Freifunk
-    still_image_url: https://127.0.0.1:8123/local/Freifunk.png
 
 counter:
   vacuum_today:
