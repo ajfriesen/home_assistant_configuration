@@ -146,7 +146,7 @@ views:
           - switch.kitchen_socket
           - switch.tv
           - switch.washing_machine
-  - title: "K\xFCchen Timer"
+  - title: "Küchen Timer"
     cards:
       - type: entities
         entities:
@@ -164,14 +164,6 @@ views:
           - input_number.alarmminutes
           - input_boolean.alarm_active_weekday
           - input_boolean.alarm_active_weekend
-  - title: Quality Time
-    cards:
-      - type: entities
-        entities:
-          - counter.going_out
-          - script.eat_out
-          - script.wine_and_dine
-          - script.coffee_and_cake
   - title: Wakeup Light
     cards:
       - type: entities

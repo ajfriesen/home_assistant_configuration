@@ -49,38 +49,6 @@ start_frodolin:
       data:
         entity_id: counter.vacuum_today
 
-wine_and_dine:
-  alias: 'Wine and Dine (-4)'
-  sequence:
-    - service: counter.decrement
-      entity_id: counter.going_out
-    - service: counter.decrement
-      entity_id: counter.going_out
-    - service: counter.decrement
-      entity_id: counter.going_out
-    - service: counter.decrement
-      entity_id: counter.going_out
-
-eat_out:
-  alias: 'Eat out (-2)'
-  sequence:
-    - service: counter.decrement
-      entity_id: counter.going_out
-    - service: counter.decrement
-      entity_id: counter.going_out
-
-coffee_and_cake:
-  alias: 'Coffee and Cake (-1)'
-  sequence:
-    - service: counter.decrement
-      entity_id: counter.going_out
-
-increment_going_out:
-  alias: 'Increment going out'
-  sequence:
-    - service: counter.increment
-      entity_id: counter.going_out
-
 morning_light:
   alias: 'Set lights for the morning'
   sequence:
