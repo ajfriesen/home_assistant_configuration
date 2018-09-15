@@ -102,14 +102,11 @@ views:
         title: Alle Scripte
         show_header_toggle: true
         entities:
-          - script.coffee_and_cake
-          - script.eat_out
           - script.flash_all_lights
           - script.start_frodolin
           - script.set_bedtime_light
           - script.evening_light
           - script.morning_light
-          - script.wine_and_dine
       - type: entities
         title: Zertifikat
         show_header_toggle: true
