@@ -7,7 +7,7 @@ start_frodolin:
         title: "Frödolin"
         message: "Ich fang an zu saugen!"
     - alias: Start
-      service: vacuum.turn_on
+      service: vacuum.start
       data:
         entity_id: vacuum.frodolin
     - alias: 'Change to quiet'
