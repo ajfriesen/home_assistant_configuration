@@ -1,8 +1,0 @@
-platform: google_travel_time
-api_key: !secret google_maps_key
-origin: device_tracker.andrej_oneplus5t
-destination: zone.home
-name: "Andrej to home by bike"
-options:
-  mode: bicycling
-  departure_time: now

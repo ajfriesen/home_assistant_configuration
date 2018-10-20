@@ -1,8 +1,0 @@
-platform: google_travel_time
-api_key: !secret google_maps_key
-origin: device_tracker.theresa_nokia6
-destination: zone.her_work
-name: "Theresa to work by bike"
-options:
-  mode: bicycling
-  departure_time: now
