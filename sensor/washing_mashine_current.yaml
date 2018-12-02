@@ -1,5 +1,5 @@
 platform: mqtt
 name: "Washing Machine Current"
 state_topic: "tele/kitchen/washing-machine/SENSOR"
-value_template: "{{ value_json["ENERGY"]["Current"] }}"
+value_template: '{{ value_json["ENERGY"]["Current"] }}'
 unit_of_measurement: "A"

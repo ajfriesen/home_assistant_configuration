@@ -1,5 +1,5 @@
 platform: mqtt
 name: "Washing Machine Wattage"
 state_topic: "tele/kitchen/washing-machine/SENSOR"
-value_template: "{{ value_json["ENERGY"]["Power"] }}"
+value_template: '{{ value_json["ENERGY"]["Power"] }}'
 unit_of_measurement: "W"
