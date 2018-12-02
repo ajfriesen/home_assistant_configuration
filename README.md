@@ -34,19 +34,14 @@ List of my current used hardware:
 - Automaticly vacuum once a day and send a notification
 - Alarm clock for turning on the lights in the morning
 - Kitchen socket with timer function for the rice cooker
-- Quality Time App for me and my significant other
 - Turn off all lights, when nobody is home
-- Track location for me and my significant other vi Owntracks
+- Track location for me and my significant other via Owntracks
 - Washing machine socket with voltage, current and wattage sensor
-- Traveltime for me an my significant other
-  - To hork
-  - To home
-- Charging station in bathroom for some devices:
-  - Bluetooth speaker
-  - Razor
-  - Tooth brush
-  - Garmin Vivoactive sport watch
 - Check regulary mails against [Have I been pwnd?](https://haveibeenpwned.com/)
 - Check my internet provider with speedtest.net
 - Google Assistant to control some switches, lights, etc.
 - Use the the [HASS Configurator](https://home-assistant.io/addons/configurator/) Add-On for [HASS.IO](https://home-assistant.io/)
+
+# Changelog
+
+Have a look here: [CHANGELOG.md](CHANGELOG.md)
