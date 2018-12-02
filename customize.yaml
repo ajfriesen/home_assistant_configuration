@@ -139,30 +139,6 @@ switch.bathroom_socket:
 
 device_tracker.andrej_oneplus5t:
   friendly_name: Andrej
-sensor.andrej_to_home_by_bike:
-  friendly_name: Mit Fahrrad nach Hause
-  icon: mdi:home-automation
-sensor.andrej_to_home_by_car:
-  friendly_name: Mit Auto nach Hause
-  icon: mdi:home-automation
-sensor.andrej_to_home_by_transit:
-  friendly_name: Mit Bahn nach Hause
-  icon: mdi:home-automation
-sensor.andrej_to_work_by_bike:
-  friendly_name: Mit Fahrrad zur Arbeit
-  icon: mdi:domain
-sensor.andrej_to_work_by_car:
-  friendly_name: Mit Auto zur Arbeit
-  icon: mdi:domain
-sensor.andrej_to_work_by_transit:
-  friendly_name: Mit Bahn zur Arbeit
-  icon: mdi:domain
 
 device_tracker.theresa_nokia6:
   friendly_name: Theresa
-sensor.theresa_to_work_by_bike:
-  friendly_name: Mit dem Fahrrad zur Arbeit
-  icon: mdi:domain
-sensor.theresa_to_home_by_bike:
-  friendly_name: Mit dem Fahrrad nach Hause
-  icon: mdi:home-heart
