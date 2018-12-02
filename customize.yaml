@@ -90,10 +90,10 @@ input_boolean.kitchen_timer_active:
 # input_boolean.kitchen_timer_start_time
 
 switch.washing_machine:
-  friendly_name: Washmaschine
+  friendly_name: Waschmaschine
   icon: mdi:washing-machine
 switch.tv:
-  friendly_name: Fernsehr
+  friendly_name: Fernseher
   icon: mdi:television-classic
 
 light.bedroomceiling:
