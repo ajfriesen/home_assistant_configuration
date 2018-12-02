@@ -6,6 +6,7 @@ homeassistant:
   elevation: !secret home_elevation
   unit_system: metric
   time_zone: Europe/Berlin
+  packages: !include_dir_named packages
 
 # Enables the frontend
 frontend:
