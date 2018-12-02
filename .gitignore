@@ -9,4 +9,8 @@ ip_bans.yaml
 snippets/
 .storage/
 .vscode/
-home-assistant_*.db
+home-assistant_*
+deps/*
+esphomeyaml/*
+*/*/__pycache__
+www/google*
