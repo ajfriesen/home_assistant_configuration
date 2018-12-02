@@ -104,10 +104,59 @@ counter:
 
 google_assistant:
   project_id: !secret google_assistant_project_id
-  client_id: !secret google_assistant_client_id
-  access_token: !secret google_assistant_access_token
-  agent_user_id: !secret google_assistant_agent_user_id
   api_key: !secret google_assistant_api_key
+  exposed_domains:
+    - switch
+    - light
+    - script
+  entity_config:
+    light.star:
+      room: Wohnzimmer
+    light.schlafzimmer:
+      room: Schlafzimmer
+    light.light_string_vase:
+      name: Lichterkette Küche
+      room: Küche
+    light.light_string_bed:
+      name: Lichterkette Theresas Zimmer
+      room: "Theresas Zimmer"
+    light.globe:
+      aliases:
+        - Welt
+        - Globus
+      room: "Theresas Zimmer"
+    light.cube:
+      room: Wohnzimmer
+    light.floorceiling:
+      room: Flur
+    light.floor_lamp:
+      name: Stehlampe
+      room: Theresas Zimmer
+    switch.bett_heizung:
+      room: Wohnzimmer
+    switch.fan:
+      room: Wohnzimmer
+    switch.kitchen_socket:
+      aliases:
+        - Reiskocher
+      room: "Küche"
+    switch.washing_machine:
+      room: Küche
+    switch.tv:
+      name: Fernsehr
+      aliases:
+        - Fernseher
+        - TV
+        - Glotze
+      room: Wohnzimmer
+    script.start_frodolin:
+      name: Frödolin
+      aliases:
+        - "Schalte den Staubsauger an"
+        - "Los Frödolin"
+
+
+
 
 # Includes
 
