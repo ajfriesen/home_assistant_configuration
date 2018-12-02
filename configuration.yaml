@@ -101,10 +101,6 @@ panel_iframe:
 counter:
   vacuum_today:
     step: 1
-  going_out:
-    icon: mdi:human-male-female
-    initial: 0
-    step: 1
 
 google_assistant:
   project_id: !secret google_assistant_project_id
