@@ -62,6 +62,9 @@ sun:
 device_tracker:
   - platform: fritz
   - platform: owntracks_http
+  - platform: trackr
+    username: !secret trackr_username
+    password: !secret trackr_password
 
 media_player:
   - platform: kodi
