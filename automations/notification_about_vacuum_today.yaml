@@ -1,0 +1,14 @@
+alias: Tell that the vacuum is back at the dock again
+hide_entity: true
+initial_state: true
+trigger:
+  platform: state
+  entity_id: vacuum.frodolin
+  to: "docked"
+action:
+  service: hangouts.send_message
+  data: 
+    target:
+      - id: !secret default_conversations
+    message:
+      - text: 'Bin jetzt wieder im Dock'
