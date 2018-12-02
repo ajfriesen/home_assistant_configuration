@@ -84,9 +84,7 @@ mqtt:
   port: !secret mqtt_port
   username: !secret mqtt_user
   password: !secret mqtt_pass
-  discovery: True
   protocol: 3.1.1
-  discovery: True
 
 vacuum:
   - platform: xiaomi_miio
