@@ -36,7 +36,6 @@ binary_sensor:
     province: NW
     days_offset: '1'
 
-
 updater:
   include_used_components: true
 
@@ -100,7 +99,6 @@ panel_iframe:
     title: Configurator
     icon: mdi:wrench
     url: !secret base_configurator_url
-
 
 counter:
   vacuum_today:
