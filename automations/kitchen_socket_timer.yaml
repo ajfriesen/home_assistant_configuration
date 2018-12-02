@@ -14,7 +14,7 @@ condition:
 action:
   - service: switch.turn_on
     entity_id: switch.kitchen_socket
-  - service: notify.hassnote
+  - service: notify.chrome_push
     data:
       title: "Reiskocher"
       message: "Ich fang an zu kochen!"

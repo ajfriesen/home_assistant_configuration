@@ -8,15 +8,15 @@ views:
     icon: mdi:home
     cards:
       - type: entities
-        title: Theresa
+        title: Bewohner
         show_header_toggle: true
         entities:
           - device_tracker.theresa_nokia6
-      - type: entities
-        title: Andrej
-        show_header_toggle: true
-        entities:
-          - device_tracker.andrej_oneplus5t
+          - sensor.nokia6_battery
+          - device_tracker.andrej_oneplus6
+          - sensor.oneplus6_battery
+          - sensor.someone_is_home
+          - device_tracker.eumel
       - type: entities
         title: Licht Scenen
         show_header_toggle: true
@@ -87,7 +87,6 @@ views:
         show_header_toggle: true
         entities:
           - automation.es_ist_schlafenzeit
-          - automation.increment_going_out_counter
           - automation.porch_animation_speed
           - automation.reset_vacuum_counter_every_night
           - automation.sag_bescheid_dass_jemand_nach_hause_kommt
@@ -168,4 +167,29 @@ views:
           - automation.porch_animation_speed
           - input_number.porch_animation_speed
           - light.porch_strip
-          
+  - title: testing
+    cards:
+      - type: entities
+        title: Sensors
+        entities:
+          - binary_sensor.pir_sensor
+      - type: entities
+        title: Music
+        entities:
+          - input_select.media_player
+          - switch.google_music
+          - input_text.playlist
+          - input_select.music
+      - type: entities
+        title: Media Player
+        entities:
+          - "media_player.googlehome5980"
+          - media_palyer.uberall
+          - media_palyer.allles_ausser_schlafzimme
+          - media_palyer.googlehome7873
+          - media_palyer.googlehome8941
+          - media_palyer.wohnzimmer
+      - type: entities
+        title: Heizung
+        entities:
+          - switch.bett_heizung

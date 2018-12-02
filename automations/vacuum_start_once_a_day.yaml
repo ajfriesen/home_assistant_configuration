@@ -5,7 +5,7 @@ trigger:
     from: 'yes'
     to: 'no'
     for:
-      minutes: 10
+      minutes: 5
 condition:
   - condition: state
     entity_id: counter.vacuum_today

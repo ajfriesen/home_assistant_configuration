@@ -1,0 +1,13 @@
+# Sonoff Basic
+
+platform: mqtt
+name: 'Bett Heizung'
+command_topic: "cmnd/bed_heater/POWER"
+state_topic: "stat/bed_heater/POWER"
+availability_topic: "tele/bed_heater/LWT"
+payload_on: "ON"
+payload_off: "OFF"
+qos: "1"
+retain: false
+payload_available: "Online"
+payload_not_available: "Offline"
