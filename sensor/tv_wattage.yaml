@@ -1,5 +1,5 @@
 platform: mqtt
 name: "TV Wattage"
-state_topic: "tele/tv/ENERGY"
-value_template: "{{ value_json.Power }}"
+state_topic: "tele/tv/SENSOR"
+value_template: "{{ value_json["ENERGY"]["Power"] }}"
 unit_of_measurement: "W"
