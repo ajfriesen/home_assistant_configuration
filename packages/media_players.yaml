@@ -37,7 +37,7 @@ script:
     alias: Turn off the Music
     sequence:
     - service: media_player.turn_off
-      entity_id: media_player.down_stairs
+      entity_id: media_player.uberall
     - service: switch.turn_off
       entity_id: switch.google_music
 
@@ -58,7 +58,7 @@ script:
     - service: input_select.select_option
       data:
         entity_id: input_select.media_player
-        option: "down_stairs"
+        option: "uberall"
     - service: script.volume30
     - service: script.musicon
     - service: input_text.set_value
@@ -71,7 +71,7 @@ script:
       sequence:
       - service: media_player.volume_set
         data:
-          entity_id: media_player.googlehome5980
+          entity_id: media_player.uberall
           volume_level: 0.3
 
   volume40:
@@ -79,7 +79,7 @@ script:
       sequence:
       - service: media_player.volume_set
         data:
-          entity_id: media_player.googlehome5980
+          entity_id: media_player.uberall
           volume_level: 0.4
 
 automation:
