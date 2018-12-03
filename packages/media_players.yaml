@@ -92,5 +92,5 @@ automation:
   id: '1521492851100'
   trigger:
   - entity_id: input_text.playlist
-    from: BootValue
+    from: "BootValue"
     platform: state
