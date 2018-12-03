@@ -168,4 +168,5 @@ zone: !include zones.yaml
 group: !include_dir_merge_named group/
 switch: !include_dir_list switches/
 light: !include_dir_list lights/
-automation: !include_dir_list automations/
+automation old: !include_dir_list automations/
+automation: !include automations.yaml
