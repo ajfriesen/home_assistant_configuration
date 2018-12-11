@@ -2,8 +2,9 @@ language: python
 python:
   - "3.5"
 before_install:
+  - export HA_VERSION=$(cat .HA_VERSION)
   - mv travis_secrets.yaml secrets.yaml
 install:
-  - pip3 install homeassistant
+  - pip3 install homeassistant==$HA_VERSION
 script:
   - hass -c . --script check_config
