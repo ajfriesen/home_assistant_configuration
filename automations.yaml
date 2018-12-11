@@ -1,0 +1,17 @@
+- id: '1543790575213'
+  alias: Upload Backup to Dropbox
+  trigger:
+  - entity_id: sensor.time
+    platform: state
+    to: '23:59'
+  condition: []
+  action:
+  - data:
+      addon: 7be23ff5_dropbox_sync
+      input:
+        command: upload
+    service: hassio.addon_stdin
+  - data:
+      message: Upload to dropbox started
+      title: Upload Backup
+    service: notify.chrome_push_oneplus6
