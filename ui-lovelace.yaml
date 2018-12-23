@@ -5,7 +5,7 @@
 title: Home
 views:
   - title: default_view
-    icon: mdi:home
+    icon: mdi:home-assistant
     cards:
       - type: entities
         title: Bewohner
@@ -30,15 +30,15 @@ views:
         entities:
           - light.bedroomceiling
           - switch.fan
+          - switch.bed_heater
+          - timer.bed_heater
       - type: entities
         title: Wohnzimmer
         show_header_toggle: true
         entities:
           - light.cube
-          - light.star
-          - switch.tv
-      - type: media-control
-        entity: media_player.kodi
+          - light.star_2
+          - switch.tv_4
       - type: entities
         title: Theresas Zimmer
         show_header_toggle: true
@@ -61,17 +61,31 @@ views:
         entities:
           - light.floorceiling
       - type: entities
-        title: Bad
-        show_header_toggle: true
-        entities:
-          - switch.bathroom_socket
-      - type: entities
         title: Staubsauger
         show_header_toggle: true
         entities:
           - script.start_frodolin
           - counter.vacuum_today
           - vacuum.frodolin
+  - title: Music
+    icon: mdi:music-circle-outline
+    cards:
+      - type: entities
+        title: Google Music
+        entities:
+          - switch.google_music
+          - input_select.media_player
+          - input_text.playlist
+          - input_select.music
+      - type: entities
+        title: Media Player
+        entities:
+          - "media_player.uberall"
+          - "media_player.googlehome5980"
+          - "media_player.allles_ausser_schlafzimme"
+          - "media_player.googlehome7873"
+          - "media_player.googlehome8941"
+          - "media_player.wohnzimmer"
   - title: Admin
     icon: mdi:settings
     cards:
@@ -160,13 +174,6 @@ views:
           - input_number.alarmminutes
           - input_boolean.alarm_active_weekday
           - input_boolean.alarm_active_weekend
-  - title: Wakeup Light
-    cards:
-      - type: entities
-        entities:
-          - automation.porch_animation_speed
-          - input_number.porch_animation_speed
-          - light.porch_strip
   - title: testing
     cards:
       - type: entities
@@ -174,22 +181,15 @@ views:
         entities:
           - binary_sensor.pir_sensor
       - type: entities
-        title: Music
-        entities:
-          - input_select.media_player
-          - switch.google_music
-          - input_text.playlist
-          - input_select.music
-      - type: entities
-        title: Media Player
-        entities:
-          - "media_player.googlehome5980"
-          - media_palyer.uberall
-          - media_palyer.allles_ausser_schlafzimme
-          - media_palyer.googlehome7873
-          - media_palyer.googlehome8941
-          - media_palyer.wohnzimmer
-      - type: entities
         title: Heizung
         entities:
-          - switch.bett_heizung
+          - switch.bed_heater
+      - type: entities
+        title: ausgehen
+        entities:
+          - counter.quality_points
+          - script.add_points
+          - script.delete_points
+  - title: Liste
+    cards:
+      - type: shopping-list
