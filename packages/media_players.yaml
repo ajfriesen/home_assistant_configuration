@@ -51,14 +51,16 @@ script:
     alias: Playlist Script from RFID
     sequence:
     - service: script.musicoff
+    # Set input_text.music to the value of input_text.playlist
     - service: input_select.select_option
       data_template:
         entity_id: input_select.music
         option: '{{ states.input_text.playlist.state }}'
+    # Set Media Player
     - service: input_select.select_option
-      data:
+      data_template:
         entity_id: input_select.media_player
-        option: "uberall"
+        option: '{{ states.input_select.media_player.state }}'
     - service: script.volume30
     - service: script.musicon
     - service: input_text.set_value
@@ -83,14 +85,27 @@ script:
           volume_level: 0.4
 
 automation:
-- action:
-  - service: script.playlist
-  alias: Playlist Value Changes
+# - id: '1544737504135'
+- alias: Playlist Value Changes
+  trigger:
+  - entity_id: input_text.playlist
+    from: BootValue
+    platform: state
   condition:
   - condition: template
     value_template: '{{ states.input_text.playlist.state != "BootValue" }}'
-  id: '1521492851100'
-  trigger:
-  - entity_id: input_text.playlist
-    from: "BootValue"
-    platform: state
+  action:
+  - data:
+      entity_id: script.playlist
+    service: script.turn_on
+# - action:
+#   - service: script.playlist
+#   alias: Playlist Value Changes
+#   condition: []
+#   - condition: template
+#     value_template: '{{ states.input_text.playlist.state != "BootValue" }}'
+#   id: '1521492851100'
+#   trigger:
+#   - entity_id: input_text.playlist
+#     from: "BootValue"
+#     platform: state
