@@ -4,7 +4,8 @@ morning_light:
     - alias: 'Set hue lights'
       service: light.turn_on
       data:
-        brightness_pct: '1'
+        brightness_pct: '20'
+        transition: '300'
         entity_id:
           - light.bedroomceiling
           - light.floorceiling
