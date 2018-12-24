@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/ajfriesen/home_assistant_configuration.svg?branch=master)](https://travis-ci.org/ajfriesen/home_assistant_configuration)
 
-I am using Home Assistant with [HASS.IO](https://home-assistant.io/) on a Raspberry Pi 3.
+I am using Home Assistant with [HASS.IO](https://home-assistant.io/) on a HP ProLiant G7 MicroServer N54L.
 
 ## Screenshots
 
@@ -20,14 +20,16 @@ List of my current used hardware:
   - 2 x [Sonoff S20](http://sonoff.itead.cc/en/products/residential/s20-socket)
   - 3 x [Sonoff POW](http://sonoff.itead.cc/en/products/sonoff/sonoff-pow)
     - Washing machine
+    - TV
   - 6 x [Sonfoff Basics](http://sonoff.itead.cc/en/products/sonoff/sonoff-basic)
     - All 6 are used for lights
 - Phillips Hue
   - 1 x Bridge
-  - 2x normal E27 bulps
-- Fritz Box Router
-- Xiaomi vacuum generation one
--3 x Google Chromecast Audio
+  - 2 x normal E27 bulps
+- Fritz!Box 6490 cable
+- Xiaomi vacuum (first generation)
+- 3 x Google Chromecast Audio
+- 3 x Google Home
 
 ## Features I use with Home Assistant
 
