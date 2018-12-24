@@ -4,5 +4,6 @@ trigger:
   entity_id: sensor.someone_is_home
   to: 'no'
 action:
-  service: light.turn_off
-  entity_id: group.all_lights
+  - delay: '00:30:00'
+  - service: light.turn_off
+    entity_id: group.all_lights
