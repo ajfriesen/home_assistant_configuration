@@ -15,6 +15,9 @@ frontend:
 lovelace:
   mode: yaml
 
+# Shoppinglist
+shopping_list:
+
 # Enables configuration UI
 config:
 
