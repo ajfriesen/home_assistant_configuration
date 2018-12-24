@@ -84,13 +84,6 @@ notify:
     default_conversations:
       - id: !secret default_conversations
 
-mqtt:
-  broker: 192.168.178.61
-  port: !secret mqtt_port
-  username: !secret mqtt_user
-  password: !secret mqtt_pass
-  protocol: 3.1.1
-
 vacuum:
   - platform: xiaomi_miio
     host: 192.168.178.54
