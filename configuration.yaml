@@ -50,9 +50,6 @@ recorder:
 # Discover some devices automatically
 discovery:
 
-# Allows you to issue voice commands from the frontend in enabled browsers
-# conversation:
-
 # Enables support for tracking state changes over time
 history:
 
