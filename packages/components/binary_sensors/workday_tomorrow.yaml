@@ -1,0 +1,8 @@
+---
+# https://www.home-assistant.io/components/binary_sensor.workday/
+#
+platform: workday
+name: workday_tomorrow
+country: DE
+province: NW
+days_offset: '1'

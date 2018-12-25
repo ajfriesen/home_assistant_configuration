@@ -1,0 +1,6 @@
+---
+# https://www.home-assistant.io/components/device_tracker.trackr/
+#
+platform: trackr
+username: !secret trackr_username
+password: !secret trackr_password

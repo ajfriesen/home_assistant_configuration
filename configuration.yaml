@@ -1,73 +1,14 @@
 homeassistant:
-  customize: !include customize.yaml
   name: Home
   latitude: !secret home_latitude
   longitude: !secret home_longitude
   elevation: !secret home_elevation
   unit_system: metric
   time_zone: Europe/Berlin
-  packages: !include_dir_named packages
 
-# Enables the frontend
-frontend:
-  javascript_version: latest
+  customize: !include customize.yaml
 
-lovelace:
-  mode: yaml
-
-# Shoppinglist
-shopping_list:
-
-# Enables configuration UI
-config:
-
-map:
-
-http:
-  api_password: !secret http_password
-  base_url: !secret base_url
-  ssl_certificate: !secret ssl_certificate
-  ssl_key: !secret ssl_key
-  ip_ban_enabled: True
-  login_attempts_threshold: "5"
-
-binary_sensor:
-  - platform: workday
-    name: workday_today
-    country: DE
-    province: NW
-  - platform: workday
-    name: workday_tomorrow
-    country: DE
-    province: NW
-    days_offset: '1'
-
-updater:
-  include_used_components: true
-
-recorder:
-
-# Discover some devices automatically
-discovery:
-
-# Enables support for tracking state changes over time
-history:
-
-# View all events in a logbook
-logbook:
-
-# Text to speech
-tts:
-  - platform: google
-    language: 'de'
-
-sun:
-
-device_tracker:
-  - platform: fritz
-  - platform: trackr
-    username: !secret trackr_username
-    password: !secret trackr_password
+  packages: !include_dir_named packages/components/includes
 
 media_player:
   - platform: kodi
@@ -99,63 +40,6 @@ counter:
   vacuum_today:
     step: 1
 
-google_assistant:
-  project_id: !secret google_assistant_project_id
-  api_key: !secret google_assistant_api_key
-  expose_by_default: false
-  exposed_domains:
-    - switch
-    - light
-    - script
-  entity_config:
-    light.star:
-      room: Wohnzimmer
-    light.schlafzimmer:
-      room: Schlafzimmer
-    light.light_string_vase:
-      name: Lichterkette Küche
-      room: Küche
-    light.light_string_bed:
-      name: Lichterkette Theresas Zimmer
-      room: "Theresas Zimmer"
-    light.globe:
-      aliases:
-        - Welt
-        - Globus
-      room: "Theresas Zimmer"
-    light.cube:
-      room: Wohnzimmer
-    light.floorceiling:
-      room: Flur
-    light.floor_lamp:
-      name: Stehlampe
-      room: Theresas Zimmer
-    switch.bett_heizung:
-      room: Wohnzimmer
-    switch.fan:
-      room: Wohnzimmer
-    switch.kitchen_socket:
-      aliases:
-        - Reiskocher
-      room: "Küche"
-    switch.washing_machine:
-      room: Küche
-    switch.tv:
-      name: Fernsehr
-      aliases:
-        - Fernseher
-        - TV
-        - Glotze
-      room: Wohnzimmer
-    script.start_frodolin:
-      name: Frödolin
-      aliases:
-        - "Schalte den Staubsauger an"
-        - "Los Frödolin"
-
-
-
-
 # Includes
 
 input_boolean: !include input_boolean.yaml
@@ -168,3 +52,5 @@ switch: !include_dir_list switches/
 light: !include_dir_list lights/
 automation old: !include_dir_list automations/
 automation: !include automations.yaml
+
+# packages: !include_dir_named config/packages
