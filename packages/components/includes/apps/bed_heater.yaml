@@ -1,18 +1,3 @@
-# # Sonoff Basic
-# switch:
-#   - platform: mqtt
-#     name: 'Bett Heizung'
-#     command_topic: "cmnd/bed_heater/POWER"
-#     state_topic: "stat/bed_heater/POWER"
-#     availability_topic: "tele/bed_heater/LWT"
-#     payload_on: "ON"
-#     payload_off: "OFF"
-#     payload_available: "online"
-#     payload_not_available: "offline"
-#     retain: false
-#     qos: "2"
-
-
 automation:
 - alias: 'Turn off bed heater after certain time'
   trigger:
@@ -57,9 +42,8 @@ automation:
   - service: timer.cancel
     entity_id: timer.bed_heater
 
-
 timer:
   bed_heater:
     name: "Timer Bettheizung"
     duration: '02:00:00'
-    icon: mdi:radiator
+    icon: mdi:timer
