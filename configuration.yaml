@@ -48,9 +48,6 @@ input_number: !include input_number.yaml
 sensor: !include_dir_list sensor/
 zone: !include zones.yaml
 group: !include_dir_merge_named group/
-switch: !include_dir_list switches/
 light: !include_dir_list lights/
 automation old: !include_dir_list automations/
 automation: !include automations.yaml
-
-# packages: !include_dir_named config/packages
