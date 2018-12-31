@@ -1,0 +1,12 @@
+---
+# https://github.com/hassio-addons/addon-mqtt/blob/v0.3.0/README.md
+# #https://community.home-assistant.io/t/community-hass-io-add-on-mqtt-server-web-client/70376
+#
+mqtt:
+  #broker: a0d7b954-mqtt
+  broker: 192.168.178.60
+  port: !secret mqtt_port
+  username: !secret mqtt_username
+  password: !secret mqtt_password
+  client_id: home-assistant
+  discovery: true
