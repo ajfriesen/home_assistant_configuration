@@ -40,9 +40,10 @@ google_assistant:
       expose: true
       name: Stehlampe
       room: Theresas Zimmer
-    switch.bett_heizung:
+    switch.bed_heater:
       expose: true
-      room: Wohnzimmer
+      name: Bettheizung
+      room: Schlafzimmer
     switch.fan:
       expose: true
       room: Wohnzimmer
