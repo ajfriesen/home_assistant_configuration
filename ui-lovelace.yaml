@@ -9,7 +9,7 @@ views:
     cards:
       - type: entities
         title: Bewohner
-        show_header_toggle: true
+        show_header_toggle: false
         entities:
           - device_tracker.theresa_nokia6
           - sensor.nokia6_battery
@@ -19,14 +19,14 @@ views:
           - device_tracker.eumel
       - type: entities
         title: Licht Scenen
-        show_header_toggle: true
+        show_header_toggle: false
         entities:
           - script.morning_light
           - script.evening_light
           - script.set_bedtime_light
       - type: entities
         title: Schlafzimmer
-        show_header_toggle: true
+        show_header_toggle: false
         entities:
           - light.bedroomceiling
           - switch.fan
@@ -34,11 +34,11 @@ views:
           - timer.bed_heater
       - type: entities
         title: Wohnzimmer
-        show_header_toggle: true
+        show_header_toggle: false
         entities:
           - light.cube
-          - light.star_2
-          - switch.tv_4
+          - light.star
+          - switch.tv
       - type: entities
         title: Theresas Zimmer
         show_header_toggle: true
@@ -47,14 +47,14 @@ views:
           - light.globe
           - light.floor_lamp
       - type: entities
-        title: "K\xFCche"
-        show_header_toggle: true
+        title: "Küche"
+        show_header_toggle: false
         entities:
-          - light.light_string_vase
+          - light.vase
           - switch.washing_machine
-          - sensor.washing_machine_wattage
-          - sensor.washing_machine_voltage
-          - sensor.washing_machine_current
+          - sensor.washing_machine_energy_power
+          - sensor.washing_machine_energy_voltage
+          - sensor.washing_machine_energy_current
       - type: entities
         title: Flur
         show_header_toggle: true
@@ -62,7 +62,7 @@ views:
           - light.floorceiling
       - type: entities
         title: Staubsauger
-        show_header_toggle: true
+        show_header_toggle: false
         entities:
           - script.start_frodolin
           - counter.vacuum_today
