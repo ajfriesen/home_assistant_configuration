@@ -11,38 +11,51 @@ google_assistant:
     - script
   entity_config:
     light.star:
+      expose: true
       room: Wohnzimmer
     light.schlafzimmer:
+      expose: true
       room: Schlafzimmer
     light.light_string_vase:
+      expose: true
       name: Lichterkette Küche
       room: Küche
     light.light_string_bed:
+      expose: true
       name: Lichterkette Theresas Zimmer
       room: "Theresas Zimmer"
     light.globe:
+      expose: true
+      name: Globus
       aliases:
         - Welt
-        - Globus
       room: "Theresas Zimmer"
     light.cube:
+      expose: true
       room: Wohnzimmer
     light.floorceiling:
+      expose: true
       room: Flur
     light.floor_lamp:
+      expose: true
       name: Stehlampe
       room: Theresas Zimmer
     switch.bett_heizung:
+      expose: true
       room: Wohnzimmer
     switch.fan:
+      expose: true
       room: Wohnzimmer
     switch.kitchen_socket:
+      expose: true
       aliases:
         - Reiskocher
       room: "Küche"
     switch.washing_machine:
+      expose: true
       room: Küche
     switch.tv:
+      expose: true
       name: Fernsehr
       aliases:
         - Fernseher
@@ -50,6 +63,7 @@ google_assistant:
         - Glotze
       room: Wohnzimmer
     script.start_frodolin:
+      expose: true
       name: Frödolin
       aliases:
         - "Schalte den Staubsauger an"
