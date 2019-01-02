@@ -1,4 +1,7 @@
 ---
 # https://www.home-assistant.io/components/recorder/
+# I am using mariadb:
+# https://www.home-assistant.io/addons/mariadb/
 #
 recorder:
+  db_url: !secret maria_db_url
