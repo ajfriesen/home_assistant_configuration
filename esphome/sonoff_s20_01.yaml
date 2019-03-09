@@ -1,0 +1,55 @@
+esphome:
+  name: sonoff_s20_01
+  platform: ESP8266
+  board: esp01_1m
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+
+ota:
+
+binary_sensor:
+  - platform: gpio
+    pin:
+      number: GPIO0
+      mode: INPUT_PULLUP
+      inverted: True
+    on_press:
+      then:
+        - switch.toggle: relay
+    name: "Sonoff S20 Button"
+  - platform: status
+    name: "Sonoff S20 Status"
+
+
+switch:
+  - platform: gpio
+    name: "Sonoff S20 Relay"
+    pin: GPIO12
+    id: relay
+    on_turn_on:
+      - light.turn_on: led
+    on_turn_off:
+      - light.turn_off: led
+
+output:
+  # Register the green LED as a dimmable output ....
+  - platform: esp8266_pwm
+    id: s20_green_led
+    pin:
+      number: GPIO13
+      inverted: True
+
+light:
+  # ... and then make a light out of it.
+  - platform: monochromatic
+    name: "Sonoff S20 Green LED"
+    output: s20_green_led
+    id: led
