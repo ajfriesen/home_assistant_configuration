@@ -2,7 +2,7 @@ alias: "Turn on Kitchen Socket"
 hide_entity: true
 initial_state: false
 trigger:
-  - platform: time
+  - platform: time_pattern
     minutes: '/1'
     seconds: 0
 condition:

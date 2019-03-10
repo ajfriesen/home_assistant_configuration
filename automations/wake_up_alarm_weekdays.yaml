@@ -1,6 +1,6 @@
 alias: "Wake me up with bedroom light transition for weekdays"
 trigger:
-  - platform: time
+  - platform: time_pattern
     minutes: '/1'
     seconds: 0
 condition:
