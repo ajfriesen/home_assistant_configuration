@@ -2,9 +2,14 @@
 # https://www.home-assistant.io/components/http/
 #
 http:
-  api_password: !secret http_password
+  # api_password: !secret http_password
   base_url: !secret base_url
-  ssl_certificate: !secret ssl_certificate
-  ssl_key: !secret ssl_key
+  # ssl_certificate: !secret ssl_certificate
+  # ssl_key: !secret ssl_key
   ip_ban_enabled: True
   login_attempts_threshold: "5"
+
+  use_x_forwarded_for: true
+  trusted_proxies: 127.0.0.1
+
+  server_port: 8123
