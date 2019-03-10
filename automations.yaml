@@ -47,29 +47,3 @@
       message: Zuhause verlassen
       title: Andrej
     service: notify.chrome_push
-- id: '1544994402306'
-  alias: Make all Tasmota devices be automatically discovered
-  trigger:
-  - event: start
-    platform: homeassistant
-  condition: []
-  action:
-  - data:
-      payload: '1'
-      topic: cmnd/sonoffs/SetOption19
-    service: mqtt.publish
-  - data:
-      payload: '1'
-      topic: cmnd/sonoffs/SetOption55
-    service: mqtt.publish
-- id: '1544994472571'
-  alias: Sync power state for MQTT devices
-  trigger:
-  - event: start
-    platform: homeassistant
-  condition: []
-  action:
-  - data:
-      payload: ''
-      topic: cmnd/sonoffs/state
-    service: mqtt.publish
