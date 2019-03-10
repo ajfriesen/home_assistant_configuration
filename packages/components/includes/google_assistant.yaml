@@ -16,7 +16,7 @@ google_assistant:
     light.schlafzimmer:
       expose: true
       room: Schlafzimmer
-    light.vase:
+    switch.sonoff_basic_06_relay:
       expose: true
       name: Vase
       room: Küche

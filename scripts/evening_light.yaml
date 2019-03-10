@@ -14,4 +14,4 @@ evening_light:
         - switch.sonoff_basic_04_relay
         - switch.sonoff_basic_02_relay
         - switch.sonoff_basic_03_relay
-        - light.vase
+        - switch.sonoff_basic_06_relay

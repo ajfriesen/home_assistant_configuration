@@ -53,7 +53,7 @@ views:
         title: "Küche"
         show_header_toggle: false
         entities:
-          - light.vase
+          - switch.sonoff_basic_06_relay
           - switch.washing_machine
           - sensor.washing_machine_energy_power
           - sensor.washing_machine_energy_voltage
