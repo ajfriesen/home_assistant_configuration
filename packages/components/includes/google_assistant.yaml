@@ -44,7 +44,7 @@ google_assistant:
       expose: true
       name: Bettheizung
       room: Schlafzimmer
-    switch.fan:
+    switch.sonoff_pow_01_relay:
       expose: true
       room: Wohnzimmer
     switch.sonoff_s20_02_relay:

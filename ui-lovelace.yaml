@@ -32,7 +32,7 @@ views:
         show_header_toggle: false
         entities:
           - light.bedroom_ceiling
-          - switch.fan
+          - switch.sonoff_pow_01_relay
           - switch.sonoff_basic_05_relay
           - timer.bed_heater
       - type: entities
@@ -155,7 +155,7 @@ views:
         show_header_toggle: true
         entities:
           - switch.bathroom_socket
-          - switch.fan
+          - switch.sonoff_pow_01_relay
           - switch.sonoff_s20_02_relay
           - switch.tv
           - switch.washing_machine
