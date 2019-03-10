@@ -33,7 +33,7 @@ views:
         entities:
           - light.bedroom_ceiling
           - switch.fan
-          - switch.bed_heater
+          - switch.sonoff_basic_05_relay
           - timer.bed_heater
       - type: entities
         title: Wohnzimmer
@@ -187,7 +187,7 @@ views:
       - type: entities
         title: Heizung
         entities:
-          - switch.bed_heater
+          - switch.sonoff_basic_05_relay
       - type: entities
         title: ausgehen
         entities:

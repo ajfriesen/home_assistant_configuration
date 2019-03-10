@@ -40,7 +40,7 @@ google_assistant:
       expose: true
       name: Stehlampe
       room: Theresas Zimmer
-    switch.bed_heater:
+    switch.sonoff_basic_05_relay:
       expose: true
       name: Bettheizung
       room: Schlafzimmer

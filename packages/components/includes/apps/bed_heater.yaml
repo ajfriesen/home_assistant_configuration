@@ -2,18 +2,18 @@ automation:
 - alias: 'Turn off bed heater after certain time'
   trigger:
     platform: state
-    entity_id: switch.bed_heater
+    entity_id: switch.sonoff_basic_05_relay
     to: "on"
     for: '02:30:00'
   condition: []
   action:
   - service: switch.turn_off
-    entity_id: switch.bed_heater
+    entity_id: switch.sonoff_basic_05_relay
 
 - alias: 'Start timer for bedheater'
   trigger:
     platform: state
-    entity_id: switch.bed_heater
+    entity_id: switch.sonoff_basic_05_relay
     from: "off"
     to: "on"
   condition: []
@@ -30,12 +30,12 @@ automation:
   condition: []
   action:
   - service: switch.turn_off
-    entity_id: switch.bed_heater
+    entity_id: switch.sonoff_basic_05_relay
 
 - alias: 'Reset timer when bed heater turns off'
   trigger:
     platform: state
-    entity_id: switch.bed_heater
+    entity_id: switch.sonoff_basic_05_relay
     to: "off"
   condition: []
   action:
