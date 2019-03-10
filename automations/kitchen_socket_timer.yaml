@@ -13,7 +13,7 @@ condition:
     value_template: '{{ now().strftime("%H:%M") == states.sensor.alarm_time_kitchen_socket.state }}'
 action:
   - service: switch.turn_on
-    entity_id: switch.kitchen_socket
+    entity_id: switch.sonoff_s20_02_relay
   - service: notify.chrome_push
     data:
       title: "Reiskocher"

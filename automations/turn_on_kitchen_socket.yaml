@@ -10,7 +10,7 @@ condition:
       - thu
 action:
   - service: switch.turn_on
-    entity_id: switch.kitchen_socket
+    entity_id: switch.sonoff_s20_02_relay
   - delay: '08:00:00'
   - service: switch.turn_off
-    entity_id: switch.kitchen_socket
+    entity_id: switch.sonoff_s20_02_relay

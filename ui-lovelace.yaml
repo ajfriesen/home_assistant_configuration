@@ -156,14 +156,14 @@ views:
         entities:
           - switch.bathroom_socket
           - switch.fan
-          - switch.kitchen_socket
+          - switch.sonoff_s20_02_relay
           - switch.tv
           - switch.washing_machine
   - title: "Küchen Timer"
     cards:
       - type: entities
         entities:
-          - switch.kitchen_socket
+          - switch.sonoff_s20_02_relay
           - input_boolean.kitchen_timer_active
           - sensor.alarm_time_kitchen_socket
           - input_number.alarmhour_kichten_socket

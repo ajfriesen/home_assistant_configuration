@@ -47,7 +47,7 @@ google_assistant:
     switch.fan:
       expose: true
       room: Wohnzimmer
-    switch.kitchen_socket:
+    switch.sonoff_s20_02_relay:
       expose: true
       aliases:
         - Reiskocher
