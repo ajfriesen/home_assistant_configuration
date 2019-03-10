@@ -39,7 +39,7 @@ views:
         title: Wohnzimmer
         show_header_toggle: false
         entities:
-          - light.cube
+          - switch.sonoff_basic_07_relay
           - switch.sonoff_basic_02_relay
           - switch.tv
       - type: entities
@@ -140,7 +140,7 @@ views:
         show_header_toggle: true
         entities:
           - light.bedroomceiling
-          - light.cube
+          - switch.sonoff_basic_07_relay
           - switch.sonoff_basic_01_relay
           - light.floorceiling
           - light.flur

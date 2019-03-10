@@ -99,7 +99,7 @@ switch.tv:
 light.bedroomceiling:
   friendly_name: Schlafzimmer
   icon: mdi:ceiling-light
-light.cube:
+switch.sonoff_basic_07_relay:
   friendly_name: Würfel
   icon: mdi:cube-outline
 switch.sonoff_basic_03_relay:

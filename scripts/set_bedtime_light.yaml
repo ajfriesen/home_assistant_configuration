@@ -16,4 +16,4 @@ set_bedtime_light:
         - switch.sonoff_basic_03_relay
         - switch.sonoff_basic_06_relay
         - light.floorceiling
-        - light.cube
+        - switch.sonoff_basic_07_relay
