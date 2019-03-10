@@ -1,5 +1,5 @@
 esphome:
-  name: sonoff_basic_03
+  name: sonoff_basic_02
   platform: ESP8266
   board: esp01_1m
 
@@ -28,14 +28,14 @@ binary_sensor:
     on_press:
       then:
         - switch.toggle: relay
-    name: "sonoff_basic_03_button"
+    name: "sonoff_basic_02_button"
   - platform: status
-    name: "sonoff_basic_03_status"
+    name: "sonoff_basic_02_status"
 
 
 switch:
   - platform: gpio
-    name: "sonoff_basic_03_relay"
+    name: "sonoff_basic_02_relay"
     pin: GPIO12
     id: relay
     on_turn_on:
@@ -54,6 +54,6 @@ output:
 light:
   # ... and then make a light out of it.
   - platform: monochromatic
-    name: "sonoff_basic_03_green_led"
+    name: "sonoff_basic_02_green_led"
     output: basic_green_led
     id: led
