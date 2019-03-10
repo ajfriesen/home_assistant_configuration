@@ -15,3 +15,5 @@ esphomeyaml/*
 www/google*
 .shopping_list.json
 node-red
+.vscode/
+.Trash*/
