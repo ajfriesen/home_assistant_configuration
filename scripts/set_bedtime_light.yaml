@@ -6,14 +6,14 @@ set_bedtime_light:
       data:
         brightness_pct: '10'
         entity_id:
-          - light.bedroomceiling
-          - light.floorceiling
+          - light.bedroom_ceiling
+          - light.floor_ceiling
     - alias: 'Turn off other lights'
       service: light.turn_off
       entity_id:
         - light.light_string_bed
-        - light.star
+        - switch.sonoff_basic_relay_2
         - light.globe
-        - light.light_string_vase
+        - light.vase
         - light.floorceiling
         - light.cube

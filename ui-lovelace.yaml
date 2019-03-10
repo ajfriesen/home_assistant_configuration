@@ -17,6 +17,9 @@ views:
           - sensor.oneplus6_battery
           - sensor.someone_is_home
           - device_tracker.eumel
+      - type: iframe
+        aspect_ratio: 90%
+        url: 'https://embed.windy.com/embed2.html?lat=50.892&lon=6.956&zoom=10&level=surface&overlay=wind&menu=&message=true&marker=&calendar=&pressure=&type=map&location=coordinates&detail=&detailLat=50.966&detailLon=7.042&metricWind=km%2Fh&metricTemp=%C2%B0C&radarRange=-1'
       - type: entities
         title: Licht Scenen
         show_header_toggle: false
@@ -28,7 +31,7 @@ views:
         title: Schlafzimmer
         show_header_toggle: false
         entities:
-          - light.bedroomceiling
+          - light.bedroom_ceiling
           - switch.fan
           - switch.bed_heater
           - timer.bed_heater
@@ -37,7 +40,7 @@ views:
         show_header_toggle: false
         entities:
           - light.cube
-          - light.star
+          - switch.sonoff_basic_relay_2
           - switch.tv
       - type: entities
         title: Theresas Zimmer
@@ -45,7 +48,7 @@ views:
         entities:
           - light.light_string_bed
           - light.globe
-          - light.floor_lamp
+          - switch.sonoff_basic_relay
       - type: entities
         title: "Küche"
         show_header_toggle: false
@@ -59,7 +62,7 @@ views:
         title: Flur
         show_header_toggle: true
         entities:
-          - light.floorceiling
+          - light.floor_ceiling
       - type: entities
         title: Staubsauger
         show_header_toggle: false
@@ -138,7 +141,7 @@ views:
         entities:
           - light.bedroomceiling
           - light.cube
-          - light.floor_lamp
+          - switch.sonoff_basic_relay
           - light.floorceiling
           - light.flur
           - light.globe
@@ -146,7 +149,7 @@ views:
           - light.light_string_vase
           - light.porch_strip
           - light.schlafzimmer
-          - light.star
+          - switch.sonoff_basic_relay_2
       - type: entities
         title: Alle Schalter
         show_header_toggle: true
@@ -177,9 +180,10 @@ views:
   - title: testing
     cards:
       - type: entities
-        title: Sensors
+        title: Fahrrad
         entities:
-          - binary_sensor.pir_sensor
+          - input_datetime.last_bike_check
+          - script.bike
       - type: entities
         title: Heizung
         entities:

@@ -6,12 +6,12 @@ evening_light:
       data:
         brightness_pct: '25'
         entity_id:
-          - light.bedroomceiling
-          - light.floorceiling
+          - light.bedroom_ceiling
+          - light.floor_ceiling
     - alias: 'Set normal light switchtes'
       service: light.turn_on
       entity_id:
         - light.light_string_bed
-        - light.star
+        - switch.sonoff_basic_relay_2
         - light.globe
-        - light.light_string_vase
+        - light.vase

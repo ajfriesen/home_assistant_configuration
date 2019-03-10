@@ -10,15 +10,15 @@ google_assistant:
     - light
     - script
   entity_config:
-    light.star:
+    switch.sonoff_basic_relay_2:
       expose: true
       room: Wohnzimmer
     light.schlafzimmer:
       expose: true
       room: Schlafzimmer
-    light.light_string_vase:
+    light.vase:
       expose: true
-      name: Lichterkette Küche
+      name: Vase
       room: Küche
     light.light_string_bed:
       expose: true
@@ -36,7 +36,7 @@ google_assistant:
     light.floorceiling:
       expose: true
       room: Flur
-    light.floor_lamp:
+    switch.sonoff_basic_relay:
       expose: true
       name: Stehlampe
       room: Theresas Zimmer
