@@ -13,6 +13,6 @@ morning_light:
       service: light.turn_on
       entity_id:
         - light.light_string_bed
-        - switch.sonoff_basic_01_relay_2
+        - switch.sonoff_basic_02_relay
         - light.globe
         - light.vase

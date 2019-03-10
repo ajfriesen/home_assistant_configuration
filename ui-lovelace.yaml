@@ -40,7 +40,7 @@ views:
         show_header_toggle: false
         entities:
           - light.cube
-          - switch.sonoff_basic_01_relay_2
+          - switch.sonoff_basic_02_relay
           - switch.tv
       - type: entities
         title: Theresas Zimmer
@@ -149,7 +149,7 @@ views:
           - light.light_string_vase
           - light.porch_strip
           - light.schlafzimmer
-          - switch.sonoff_basic_01_relay_2
+          - switch.sonoff_basic_02_relay
       - type: entities
         title: Alle Schalter
         show_header_toggle: true
