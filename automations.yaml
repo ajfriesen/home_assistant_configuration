@@ -18,18 +18,22 @@
 - id: '1543791358275'
   alias: Benachrichtigung Waschmaschine fertig
   trigger:
-  - below: '10'
-    entity_id: sensor.washing_machine_wattage
+  - below: '30'
+    entity_id: sensor.washing_machine_energy_power
+    for: 00:03:00
     platform: numeric_state
   condition:
   - condition: state
     entity_id: switch.washing_machine
-    state: 'On'
+    state: 'on'
   action:
   - data:
       message: Bin fertig
       title: Waschmaschine
     service: notify.chrome_push_oneplus6
+  - data:
+      message: Die Wäsche ist fertig!
+    service: tts.google_say
 - id: '1543791537354'
   alias: Andrej Zuhause verlassen
   trigger:
