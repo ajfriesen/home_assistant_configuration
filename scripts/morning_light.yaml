@@ -12,7 +12,7 @@ morning_light:
     - alias: 'Set normal light switchtes'
       service: light.turn_on
       entity_id:
-        - light.light_string_bed
+        - switch.sonoff_basic_04_relay
         - switch.sonoff_basic_02_relay
         - switch.sonoff_basic_03_relay
         - light.vase

@@ -46,7 +46,7 @@ views:
         title: Theresas Zimmer
         show_header_toggle: true
         entities:
-          - light.light_string_bed
+          - switch.sonoff_basic_04_relay
           - switch.sonoff_basic_03_relay
           - switch.sonoff_basic_01_relay
       - type: entities
@@ -145,7 +145,7 @@ views:
           - light.floorceiling
           - light.flur
           - switch.sonoff_basic_03_relay
-          - light.light_string_bed
+          - switch.sonoff_basic_04_relay
           - light.light_string_vase
           - light.porch_strip
           - light.schlafzimmer

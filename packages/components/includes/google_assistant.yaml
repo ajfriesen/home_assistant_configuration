@@ -20,7 +20,7 @@ google_assistant:
       expose: true
       name: Vase
       room: Küche
-    light.light_string_bed:
+    switch.sonoff_basic_04_relay:
       expose: true
       name: Lichterkette Theresas Zimmer
       room: "Theresas Zimmer"
