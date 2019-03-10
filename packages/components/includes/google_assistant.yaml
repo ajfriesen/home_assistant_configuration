@@ -52,7 +52,7 @@ google_assistant:
       aliases:
         - Reiskocher
       room: "Küche"
-    switch.washing_machine:
+    switch.sonoff_pow_03_relay:
       expose: true
       room: Küche
     switch.sonoff_pow_02_relay:

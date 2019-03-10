@@ -24,7 +24,7 @@
     platform: numeric_state
   condition:
   - condition: state
-    entity_id: switch.washing_machine
+    entity_id: switch.sonoff_pow_03_relay
     state: 'on'
   action:
   - data:

@@ -54,7 +54,7 @@ views:
         show_header_toggle: false
         entities:
           - switch.sonoff_basic_06_relay
-          - switch.washing_machine
+          - switch.sonoff_pow_03_relay
           - sensor.washing_machine_energy_power
           - sensor.washing_machine_energy_voltage
           - sensor.washing_machine_energy_current
@@ -158,7 +158,7 @@ views:
           - switch.sonoff_pow_01_relay
           - switch.sonoff_s20_02_relay
           - switch.sonoff_pow_02_relay
-          - switch.washing_machine
+          - switch.sonoff_pow_03_relay
   - title: "Küchen Timer"
     cards:
       - type: entities

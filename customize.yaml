@@ -89,7 +89,7 @@ input_boolean.kitchen_timer_active:
   icon: mdi:power
 # input_boolean.kitchen_timer_start_time
 
-switch.washing_machine:
+switch.sonoff_pow_03_relay:
   friendly_name: Waschmaschine
   icon: mdi:washing-machine
 switch.sonoff_pow_02_relay:
