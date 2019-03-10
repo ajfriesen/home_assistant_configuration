@@ -47,7 +47,7 @@ views:
         show_header_toggle: true
         entities:
           - light.light_string_bed
-          - light.globe
+          - switch.sonoff_basic_03_relay
           - switch.sonoff_basic_01_relay
       - type: entities
         title: "Küche"
@@ -144,7 +144,7 @@ views:
           - switch.sonoff_basic_01_relay
           - light.floorceiling
           - light.flur
-          - light.globe
+          - switch.sonoff_basic_03_relay
           - light.light_string_bed
           - light.light_string_vase
           - light.porch_strip

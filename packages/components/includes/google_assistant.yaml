@@ -24,7 +24,7 @@ google_assistant:
       expose: true
       name: Lichterkette Theresas Zimmer
       room: "Theresas Zimmer"
-    light.globe:
+    switch.sonoff_basic_03_relay:
       expose: true
       name: Globus
       aliases:

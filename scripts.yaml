@@ -64,5 +64,5 @@ morning_light:
       entity_id:
         - light.light_string_bed
         - switch.sonoff_basic_02_relay
-        - light.globe
+        - switch.sonoff_basic_03_relay
         - light.light_string_vase

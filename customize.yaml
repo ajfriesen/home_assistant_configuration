@@ -102,7 +102,7 @@ light.bedroomceiling:
 light.cube:
   friendly_name: Würfel
   icon: mdi:cube-outline
-light.globe:
+switch.sonoff_basic_03_relay:
   friendly_name: Globus
   icon: mdi:earth
 switch.sonoff_basic_01_relay:
