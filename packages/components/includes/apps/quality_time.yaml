@@ -1,0 +1,51 @@
+counter:
+  quality_points:
+    icon: mdi:human-male-female
+    step: 1
+    restore: true
+
+script:
+  add_points:
+    alias: '+ 1'
+    sequence:
+      - service: counter.increment
+        entity_id: counter.quality_points
+  delete_points:
+    alias: '- 1'
+    sequence:
+      - service: counter.decrement
+        entity_id: counter.quality_points
+
+automation:
+- action:
+  - service: notify.chrome_push_oneplus6
+    data:
+      title: "Quality Time"
+      message: "Hast du dir einen Punkt verdient?"
+      actions:
+      - action: "button1"
+        title: "Jap"
+  - service: tts.google_say
+    entity_id: media_player.uberall
+    data:
+      message: 'test!'
+  condition:
+    - condition: time
+      weekday:
+        - sun
+  trigger:
+    # platform: time
+    # at: "15:39:00"
+    platform: state
+    entity_id: switch.sonoff_basic_relay_2
+    to: 'on'
+
+- alias: HTML5 push notification action button clicked
+  trigger:
+    platform: event
+    event_type: html5_notification.clicked
+    event_data:
+     action: button1
+  action:
+  - service: ligt.toggle
+    entity_id: light.cube
