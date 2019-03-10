@@ -7,3 +7,13 @@ trigger:
 action:
   - service: light.turn_off
     entity_id: group.all_lights
+  - service: switch.turn_off
+    entity_id: switch.google_music
+  - service: media_player.media_stop
+    entity_id: 
+      - media_player.uberall
+      - media_player.googlehome8941
+      - media_player.googlehome7873
+      - media_player.googlehome5980
+      - media_player.allles_ausser_schlafzimme
+      - media_player.wohnzimmer
