@@ -105,7 +105,7 @@ light.cube:
 light.globe:
   friendly_name: Globus
   icon: mdi:earth
-switch.sonoff_basic_relay:
+switch.sonoff_basic_01_relay:
   friendly_name: Stehlampe
   icon: mdi:lamp
 light.floorceiling:
@@ -115,7 +115,7 @@ light.light_string_bed:
   friendly_name: Lichterkette Bett
 light.light_string_vase:
   friendly_name: Lichterkette Vase
-switch.sonoff_basic_relay_2:
+switch.sonoff_basic_01_relay_2:
   friendly_name: Stern
   icon: mdi:star
 switch.fan:
