@@ -1,10 +1,16 @@
-# https://www.home-assistant.io/components/influxdb/
-#
+https://www.home-assistant.io/components/influxdb/
+
 influxdb:
-  host: 192.168.178.60
-  port: 8086
+  host: !secret influxdb_host
+  port: !secret influxdb_port
   database: homeassistant
   username: homeassistant
   password: !secret influxdb_password
   max_retries: 3
   default_measurement: state
+
+panel_iframe:
+  influxdb:
+    title: InfluxDB
+    icon: mdi:chart-areaspline
+    url: http://192.168.178.60:8888
