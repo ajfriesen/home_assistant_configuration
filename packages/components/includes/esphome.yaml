@@ -1,0 +1,7 @@
+#
+#
+panel_iframe:
+  tasmoadmin:
+    title: ESPHome
+    icon: mdi:chip
+    url: !secret esphome_url
