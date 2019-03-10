@@ -146,7 +146,7 @@ views:
           - light.flur
           - switch.sonoff_basic_03_relay
           - switch.sonoff_basic_04_relay
-          - light.light_string_vase
+          - switch.sonoff_basic_06_relay
           - light.porch_strip
           - light.schlafzimmer
           - switch.sonoff_basic_02_relay

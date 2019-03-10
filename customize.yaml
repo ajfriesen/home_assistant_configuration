@@ -113,7 +113,7 @@ light.floorceiling:
   icon: mdi:ceiling-light
 switch.sonoff_basic_04_relay:
   friendly_name: Lichterkette Bett
-light.light_string_vase:
+switch.sonoff_basic_06_relay:
   friendly_name: Lichterkette Vase
 switch.sonoff_basic_02_relay:
   friendly_name: Stern
