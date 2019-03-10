@@ -92,7 +92,7 @@ input_boolean.kitchen_timer_active:
 switch.washing_machine:
   friendly_name: Waschmaschine
   icon: mdi:washing-machine
-switch.tv:
+switch.sonoff_pow_02_relay:
   friendly_name: Fernseher
   icon: mdi:television-classic
 

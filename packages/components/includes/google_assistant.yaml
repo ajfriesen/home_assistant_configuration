@@ -55,7 +55,7 @@ google_assistant:
     switch.washing_machine:
       expose: true
       room: Küche
-    switch.tv:
+    switch.sonoff_pow_02_relay:
       expose: true
       name: Fernsehr
       aliases:

@@ -41,7 +41,7 @@ views:
         entities:
           - switch.sonoff_basic_07_relay
           - switch.sonoff_basic_02_relay
-          - switch.tv
+          - switch.sonoff_pow_02_relay
       - type: entities
         title: Theresas Zimmer
         show_header_toggle: true
@@ -157,7 +157,7 @@ views:
           - switch.bathroom_socket
           - switch.sonoff_pow_01_relay
           - switch.sonoff_s20_02_relay
-          - switch.tv
+          - switch.sonoff_pow_02_relay
           - switch.washing_machine
   - title: "Küchen Timer"
     cards:
