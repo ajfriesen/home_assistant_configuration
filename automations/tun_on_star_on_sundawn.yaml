@@ -4,5 +4,9 @@ trigger:
   platform: sun
   event: sunset
   offset: '-00:45:00'
+condition:
+  - condition: state
+    entity_id: sensor.someone_is_home
+    state: 'yes'
 action:
   - service: script.evening_light
