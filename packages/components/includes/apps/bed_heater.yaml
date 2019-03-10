@@ -45,5 +45,6 @@ automation:
 timer:
   bed_heater:
     name: "Timer Bettheizung"
-    duration: '02:00:00'
+    duration: '01:00:00'
     icon: mdi:timer
+
