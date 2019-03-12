@@ -43,7 +43,3 @@ List of my current used hardware:
 - Check my internet provider with speedtest.net
 - Google Assistant to control some switches, lights, etc.
 - Use the the [HASS Configurator](https://home-assistant.io/addons/configurator/) Add-On for [HASS.IO](https://home-assistant.io/)
-
-# Changelog
-
-Have a look here: [CHANGELOG.md](CHANGELOG.md)
