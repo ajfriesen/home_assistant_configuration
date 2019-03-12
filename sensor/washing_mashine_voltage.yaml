@@ -1,5 +1,0 @@
-platform: mqtt
-name: "Washing Machine Voltage"
-state_topic: "tele/kitchen/washing-machine/SENSOR"
-value_template: '{{ value_json["ENERGY"]["Voltage"] }}'
-unit_of_measurement: "V"
