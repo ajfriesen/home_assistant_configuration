@@ -55,9 +55,9 @@ views:
         entities:
           - switch.sonoff_basic_06_relay
           - switch.sonoff_pow_03_relay
-          - sensor.washing_machine_energy_power
-          - sensor.washing_machine_energy_voltage
-          - sensor.washing_machine_energy_current
+          - sensor.sonoff_pow_03_power
+          - sensor.sonoff_pow_03_voltage
+          - sensor.sonoff_pow_03_current
       - type: entities
         title: Flur
         show_header_toggle: true
