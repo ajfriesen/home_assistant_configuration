@@ -13,7 +13,7 @@ google_assistant:
     light.stern:
       expose: true
       room: Wohnzimmer
-    light.schlafzimmer:
+    light.bedroom_ceiling:
       expose: true
       room: Schlafzimmer
     switch.sonoff_basic_06_relay:
@@ -33,7 +33,7 @@ google_assistant:
     switch.sonoff_basic_07_relay:
       expose: true
       room: Wohnzimmer
-    light.floorceiling:
+    light.floor_ceiling:
       expose: true
       room: Flur
     switch.sonoff_basic_01_relay:
