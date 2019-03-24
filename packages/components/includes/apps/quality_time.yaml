@@ -37,7 +37,7 @@ automation:
     # platform: time
     # at: "15:39:00"
     platform: state
-    entity_id: switch.sonoff_basic_02_relay
+    entity_id: light.stern
     to: 'on'
 
 - alias: HTML5 push notification action button clicked

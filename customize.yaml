@@ -115,7 +115,7 @@ switch.sonoff_basic_04_relay:
   friendly_name: Lichterkette Bett
 switch.sonoff_basic_06_relay:
   friendly_name: Lichterkette Vase
-switch.sonoff_basic_02_relay:
+light.stern:
   friendly_name: Stern
   icon: mdi:star
 switch.sonoff_pow_01_relay:

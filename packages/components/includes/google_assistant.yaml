@@ -10,7 +10,7 @@ google_assistant:
     - light
     - script
   entity_config:
-    switch.sonoff_basic_02_relay:
+    light.stern:
       expose: true
       room: Wohnzimmer
     light.schlafzimmer:
