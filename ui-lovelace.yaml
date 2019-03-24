@@ -194,6 +194,14 @@ views:
           - counter.quality_points
           - script.add_points
           - script.delete_points
+      - type: entities
+        title: Multisensor
+        entities:
+          - sensor.multisensor_brightness
+          - sensor.multisensor_humidity
+          - light.multisensor_light
+          - sensor.multisensor_temperature
+          - binary_sensor.multisensor_motion
   - title: Liste
     cards:
       - type: shopping-list
