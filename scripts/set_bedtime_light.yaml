@@ -16,4 +16,4 @@ set_bedtime_light:
         - light.globus
         - light.vase
         - light.floorceiling
-        - switch.sonoff_basic_07_relay
+        - light.cube

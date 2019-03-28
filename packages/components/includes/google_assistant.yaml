@@ -30,7 +30,7 @@ google_assistant:
       aliases:
         - Welt
       room: "Theresas Zimmer"
-    switch.sonoff_basic_07_relay:
+    light.cube:
       expose: true
       room: Wohnzimmer
     light.floor_ceiling:
