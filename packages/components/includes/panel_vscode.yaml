@@ -1,0 +1,7 @@
+#
+#
+panel_iframe:
+  vscode:
+    title: VS Code
+    icon: mdi:code-tags
+    url: !secret vscode_url
