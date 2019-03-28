@@ -48,4 +48,4 @@ automation:
      action: button1
   action:
   - service: ligt.toggle
-    entity_id: switch.sonoff_basic_07_relay
+    entity_id: light.cube
