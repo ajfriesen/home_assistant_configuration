@@ -46,7 +46,7 @@ google_assistant:
       room: Schlafzimmer
     switch.sonoff_pow_01_relay:
       expose: true
-      room: Wohnzimmer
+      room: Schlafzimmer
     switch.sonoff_s20_02_relay:
       expose: true
       aliases:
