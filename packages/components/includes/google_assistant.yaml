@@ -36,7 +36,7 @@ google_assistant:
     light.floor_ceiling:
       expose: true
       room: Flur
-    switch.sonoff_basic_01_relay:
+    light.stehlampe:
       expose: true
       name: Stehlampe
       room: Theresas Zimmer

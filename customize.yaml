@@ -105,7 +105,7 @@ switch.sonoff_basic_07_relay:
 switch.sonoff_basic_03_relay:
   friendly_name: Globus
   icon: mdi:earth
-switch.sonoff_basic_01_relay:
+light.stehlampe:
   friendly_name: Stehlampe
   icon: mdi:lamp
 light.floorceiling:
