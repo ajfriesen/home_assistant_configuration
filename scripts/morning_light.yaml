@@ -14,5 +14,5 @@ morning_light:
       entity_id:
         - switch.sonoff_basic_04_relay
         - light.stern
-        - switch.sonoff_basic_03_relay
+        - switch.light.globus
         - switch.sonoff_basic_06_relay

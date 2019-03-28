@@ -47,7 +47,7 @@ views:
         show_header_toggle: true
         entities:
           - switch.sonoff_basic_04_relay
-          - switch.sonoff_basic_03_relay
+          - switch.light.globus
           - light.stehlampe
       - type: entities
         title: "Küche"
@@ -76,10 +76,8 @@ views:
       - type: entities
         title: Google Music
         entities:
-          - switch.google_music
           - input_select.media_player
-          - input_text.playlist
-          - input_select.music
+          - input_text.card_id
       - type: entities
         title: Media Player
         entities:
@@ -144,7 +142,7 @@ views:
           - light.stehlampe
           - light.floorceiling
           - light.flur
-          - switch.sonoff_basic_03_relay
+          - switch.light.globus
           - switch.sonoff_basic_04_relay
           - switch.sonoff_basic_06_relay
           - light.porch_strip

@@ -102,7 +102,7 @@ light.bedroomceiling:
 switch.sonoff_basic_07_relay:
   friendly_name: Würfel
   icon: mdi:cube-outline
-switch.sonoff_basic_03_relay:
+switch.light.globus:
   friendly_name: Globus
   icon: mdi:earth
 light.stehlampe:
