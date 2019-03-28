@@ -1,0 +1,13 @@
+---
+# Using the REST notification platform
+# https://www.home-assistant.io/components/notify.rest/
+# setting up the Google Assistant Webserver in a Docker container
+# https://community.home-assistant.io/t/google-assistant-webserver-in-a-docker-container/88820
+
+notify:
+  - name: ga_broadcast
+    platform: rest
+    resource: !secret google_assistant_webserver_broadcast_message
+  - name: ga_command
+    platform: rest
+    resource: !secret google_assistant_webserver_command
