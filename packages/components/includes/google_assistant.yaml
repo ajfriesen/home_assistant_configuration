@@ -16,11 +16,11 @@ google_assistant:
     light.bedroom_ceiling:
       expose: true
       room: Schlafzimmer
-    switch.sonoff_basic_06_relay:
+     light.vase:
       expose: true
       name: Vase
       room: Küche
-    switch.sonoff_basic_04_relay:
+    light.lichterkette_bett:
       expose: true
       name: Lichterkette Theresas Zimmer
       room: "Theresas Zimmer"

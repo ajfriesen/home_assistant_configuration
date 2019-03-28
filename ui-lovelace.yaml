@@ -53,7 +53,7 @@ views:
         title: "Küche"
         show_header_toggle: false
         entities:
-          - switch.sonoff_basic_06_relay
+          -  light.vase
           - switch.sonoff_pow_03_relay
           - sensor.sonoff_pow_03_power
           - sensor.sonoff_pow_03_voltage
@@ -144,7 +144,7 @@ views:
           - light.flur
           - switch.light.globus
           - light.lichterkette_bett
-          - switch.sonoff_basic_06_relay
+          -  light.vase
           - light.porch_strip
           - light.schlafzimmer
           - light.stern

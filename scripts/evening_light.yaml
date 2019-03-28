@@ -14,4 +14,4 @@ evening_light:
         - light.lichterkette_bett
         - light.stern
         - switch.light.globus
-        - switch.sonoff_basic_06_relay
+        -  light.vase
