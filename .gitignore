@@ -18,3 +18,4 @@ node-red
 .vscode/
 .Trash*/
 /glances
+*.ttf
