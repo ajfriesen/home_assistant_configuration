@@ -1,0 +1,91 @@
+input_text:
+  card_id:
+    name: card_id
+    initial: BootValue
+
+input_select:
+  music:
+    name: Music
+    options:
+     - " "   # Should be empty
+    icon: mdi:music-note
+  media_player:
+    name: Media player
+    options: # entity_ids of your media players
+     - "uberall"
+     - "alles_ausser_schlafzimmer"
+     - "schlafzimmer"
+     - "badezimmer"
+     - "kuche"
+     - "wohnzimmer"
+    icon: mdi:music-note
+
+automation:
+- alias: Reset playlist value
+  initial_state: True
+  trigger:
+  - entity_id: input_text.card_id
+    from: BootValue
+    platform: state
+  action:
+    - service: input_text.set_value
+      data_template:
+        entity_id: input_text.card_id
+        value: "BootValue"
+
+# - alias: Play Linkin Park Meteora Album
+#   initial_state: True
+#   trigger:
+#     - platform: state
+#       entity_id: input_text.playlist
+#       to: '0011205436'
+#   action:
+#     - service: notify.ga_command
+#       data:
+#         message: "Play the playlist LinkinParkMeteora on uberall"
+
+
+- alias: Play music from google music
+  initial_state: True
+  trigger:
+    - platform: state
+      entity_id: input_text.card_id
+      from: 'BootValue'
+  condition:
+    condition: template
+    value_template: "{{ states('input_text.card_id') != 'BootValue' }}"
+  action:
+    - service: notify.ga_command
+      data_template:
+        message: >-
+          {% set input = states('input_text.card_id') %}
+          {% set card_ids = {
+            "0016042153": "Motivation",
+            "0011180535": "Postrock",
+            "0011343063": "FettesBrotFettes",
+            "0011342290": "FettesBrotBrot",
+            "0011343249": "Blink182Blink182",
+            "0011347111": "KaleoAB",
+            "0011347269": "MichaelBubleChristmas",
+            "0011333759": "FynnKliemannNie",
+            "0011329392": "JupiterJonesBruelendeFahnen",
+            "0011334227": "TheesUhlmann2",
+            "0011329186": "DendemannDiePfuetzeDesEisbergs",
+            "0011342289": "Blink182EnemaOfTheState",
+            "0011338534": "LumpenpackDieZukunftWirdGross",
+            "0011345940": "VonWegenLisbethUndPloetzlichDerLachs",
+            "0011222329": "TheesUhlmannDeluxeVersion",
+            "0011226620": "LumenpackSteil2",
+            "0011209845": "FooFigthersOneByOne",
+            "0011209652": "Blink182TakeOffYourPantsAndJacket",
+            "0011214020": "DendemannVomVintageVerweht",
+            "0010898939": "VonWegenLisbethGrande",
+            "0011233446": "LinkinParkHybridTheory",
+            "0011205436": "LinkinParkMeteora",
+            "0011222944": "Australien",
+            "0011205606": "Tanzen",
+            "0011320151": "TomOdell",
+            "0010900249": "MaryPoppins",
+            "fallback": "LinkinParkMeteora"
+          } %}
+          Play the card_id {{ card_ids[input] if input in card_ids else card_ids['fallback'] }} on uberall
