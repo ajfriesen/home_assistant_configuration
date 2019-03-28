@@ -99,7 +99,7 @@ switch.sonoff_pow_02_relay:
 light.bedroomceiling:
   friendly_name: Schlafzimmer
   icon: mdi:ceiling-light
-light.cube:
+light.wurfel:
   friendly_name: Würfel
   icon: mdi:cube-outline
 light.globus:

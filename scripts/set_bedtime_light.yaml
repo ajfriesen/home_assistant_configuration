@@ -16,4 +16,4 @@ set_bedtime_light:
         - light.globus
         - light.vase
         - light.floorceiling
-        - light.cube
+        - light.wurfel

@@ -30,7 +30,7 @@ google_assistant:
       aliases:
         - Welt
       room: "Theresas Zimmer"
-    light.cube:
+    light.wurfel:
       expose: true
       room: Wohnzimmer
     light.floor_ceiling:

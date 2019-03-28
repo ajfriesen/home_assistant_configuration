@@ -40,7 +40,7 @@ views:
         title: Wohnzimmer
         show_header_toggle: false
         entities:
-          - light.cube
+          - light.wurfel
           - light.stern
           - switch.sonoff_pow_02_relay
       - type: entities
@@ -139,7 +139,7 @@ views:
         show_header_toggle: true
         entities:
           - light.bedroomceiling
-          - light.cube
+          - light.wurfel
           - light.stehlampe
           - light.floorceiling
           - light.flur
