@@ -48,7 +48,7 @@ views:
         entities:
           - switch.sonoff_basic_04_relay
           - switch.sonoff_basic_03_relay
-          - switch.sonoff_basic_01_relay
+          - light.stehlampe
       - type: entities
         title: "Küche"
         show_header_toggle: false
@@ -84,10 +84,10 @@ views:
         title: Media Player
         entities:
           - "media_player.uberall"
-          - "media_player.googlehome5980"
-          - "media_player.allles_ausser_schlafzimme"
-          - "media_player.googlehome7873"
-          - "media_player.googlehome8941"
+          - "media_player.schlafzimmer"
+          - "media_player.alles_ausser_schlafzimmer"
+          - "media_player.badezimmer"
+          - "media_player.kuche"
           - "media_player.wohnzimmer"
   - title: Admin
     icon: mdi:settings
@@ -141,7 +141,7 @@ views:
         entities:
           - light.bedroomceiling
           - switch.sonoff_basic_07_relay
-          - switch.sonoff_basic_01_relay
+          - light.stehlampe
           - light.floorceiling
           - light.flur
           - switch.sonoff_basic_03_relay
