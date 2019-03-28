@@ -35,6 +35,7 @@ views:
           - switch.sonoff_pow_01_relay
           - switch.sonoff_basic_05_relay
           - timer.bed_heater
+          - switch.sonoff_s20_01_relay
       - type: entities
         title: Wohnzimmer
         show_header_toggle: false
