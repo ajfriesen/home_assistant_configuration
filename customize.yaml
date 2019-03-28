@@ -136,6 +136,9 @@ switch.bathroom_socket:
   friendly_name: 'Badezimmer Steckdose'
   icon: mdi:power-socket-eu
 
+switch.sonoff_basic_05_relay:
+  friendly_name: Bettheizung
+  icon: mdi:radiator
 
 device_tracker.andrej_oneplus5t:
   friendly_name: Andrej
