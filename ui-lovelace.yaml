@@ -46,7 +46,7 @@ views:
         title: Theresas Zimmer
         show_header_toggle: true
         entities:
-          - switch.sonoff_basic_04_relay
+          - light.lichterkette_bett
           - switch.light.globus
           - light.stehlampe
       - type: entities
@@ -143,7 +143,7 @@ views:
           - light.floorceiling
           - light.flur
           - switch.light.globus
-          - switch.sonoff_basic_04_relay
+          - light.lichterkette_bett
           - switch.sonoff_basic_06_relay
           - light.porch_strip
           - light.schlafzimmer

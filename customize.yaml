@@ -111,7 +111,7 @@ light.stehlampe:
 light.floorceiling:
   friendly_name: Flur
   icon: mdi:ceiling-light
-switch.sonoff_basic_04_relay:
+light.lichterkette_bett:
   friendly_name: Lichterkette Bett
 switch.sonoff_basic_06_relay:
   friendly_name: Lichterkette Vase
