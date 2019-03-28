@@ -102,7 +102,7 @@ light.bedroomceiling:
 switch.sonoff_basic_07_relay:
   friendly_name: Würfel
   icon: mdi:cube-outline
-switch.light.globus:
+light.globus:
   friendly_name: Globus
   icon: mdi:earth
 light.stehlampe:
@@ -113,7 +113,7 @@ light.floorceiling:
   icon: mdi:ceiling-light
 light.lichterkette_bett:
   friendly_name: Lichterkette Bett
- light.vase:
+light.vase:
   friendly_name: Lichterkette Vase
 light.stern:
   friendly_name: Stern
@@ -137,7 +137,7 @@ switch.bathroom_socket:
   icon: mdi:power-socket-eu
 
 switch.sonoff_basic_05_relay:
-  friendly_name: Bettheizung
+  friendly_name: 'Bettheizung'
   icon: mdi:radiator
 
 device_tracker.andrej_oneplus5t:

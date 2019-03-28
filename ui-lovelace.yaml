@@ -47,13 +47,13 @@ views:
         show_header_toggle: true
         entities:
           - light.lichterkette_bett
-          - switch.light.globus
+          - light.globus
           - light.stehlampe
       - type: entities
         title: "Küche"
         show_header_toggle: false
         entities:
-          -  light.vase
+          - light.vase
           - switch.sonoff_pow_03_relay
           - sensor.sonoff_pow_03_power
           - sensor.sonoff_pow_03_voltage
@@ -142,9 +142,9 @@ views:
           - light.stehlampe
           - light.floorceiling
           - light.flur
-          - switch.light.globus
+          - light.globus
           - light.lichterkette_bett
-          -  light.vase
+          - light.vase
           - light.porch_strip
           - light.schlafzimmer
           - light.stern

@@ -13,5 +13,5 @@ evening_light:
       entity_id:
         - light.lichterkette_bett
         - light.stern
-        - switch.light.globus
-        -  light.vase
+        - light.globus
+        - light.vase

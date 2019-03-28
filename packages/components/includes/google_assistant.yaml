@@ -16,7 +16,7 @@ google_assistant:
     light.bedroom_ceiling:
       expose: true
       room: Schlafzimmer
-     light.vase:
+    light.vase:
       expose: true
       name: Vase
       room: Küche
@@ -24,7 +24,7 @@ google_assistant:
       expose: true
       name: Lichterkette Theresas Zimmer
       room: "Theresas Zimmer"
-    switch.light.globus:
+    light.globus:
       expose: true
       name: Globus
       aliases:
