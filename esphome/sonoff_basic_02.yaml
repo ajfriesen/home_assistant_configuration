@@ -1,5 +1,14 @@
+---
+# Device: sonoff basic
+# Light switch for the star
+#
+
+substitutions:
+  devicename: sonoff_basic_02
+  upper_devicename: Stern
+
 esphome:
-  name: sonoff_basic_02
+  name: ${devicename}
   platform: ESP8266
   board: esp01_1m
 
@@ -19,41 +28,43 @@ api:
 
 ota:
 
+sensor:
+  - platform: wifi_signal
+    name: ${devicename}_wifi_signal
+    update_interval: 10s
+  - platform: uptime
+    name: ${devicename}_uptime
+
+text_sensor:
+  - platform: version
+    name: ${devicename}_esphome_version
+
+# GPIO13 Green LED
+status_led:
+  pin:
+    number: GPIO13
+    inverted: yes
+
+# GPIO0 Button inverted
 binary_sensor:
   - platform: gpio
+    id: button
     pin:
       number: GPIO0
       mode: INPUT_PULLUP
       inverted: True
+    name: ${devicename}_button"
     on_press:
-      then:
-        - switch.toggle: relay
-    name: "sonoff_basic_02_button"
-  - platform: status
-    name: "sonoff_basic_02_status"
+      - light.toggle: light
 
-
-switch:
-  - platform: gpio
-    name: "sonoff_basic_02_relay"
-    pin: GPIO12
-    id: relay
-    on_turn_on:
-      - light.turn_on: led
-    on_turn_off:
-      - light.turn_off: led
-
+# GPIO12 Relay
 output:
-  # Register the green LED as a dimmable output ....
-  - platform: esp8266_pwm
-    id: basic_green_led
-    pin:
-      number: GPIO13
-      inverted: True
+  - platform: gpio
+    id: relay
+    pin: GPIO12  
 
 light:
-  # ... and then make a light out of it.
-  - platform: monochromatic
-    name: "sonoff_basic_02_green_led"
-    output: basic_green_led
-    id: led
+  - platform: binary
+    id: light
+    name: ${upper_devicename}
+    output: relay
