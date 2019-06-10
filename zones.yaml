@@ -9,3 +9,10 @@
   longitude: !secret work_longitude_andrej
   radius: 150
   icon: mdi:company
+
+- name: Home
+  latitude: !secret home_latitude
+  longitude: !secret home_longitude
+  elevation: !secret home_elevation
+  radius: 150
+  icon: mdi:home
