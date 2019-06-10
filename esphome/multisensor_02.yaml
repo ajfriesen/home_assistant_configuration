@@ -1,0 +1,58 @@
+esphome:
+  name: multisensor_02
+  platform: ESP8266
+  board: nodemcuv2
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+  manual_ip:
+    static_ip: !secret sonoff_basic_06_static_ip
+    gateway: !secret wifi_gateway
+    subnet: !secret wifi_subnet
+
+api:
+
+# Enable logging
+logger:
+
+ota:
+
+sensor:
+  - platform: dht
+    pin: D7
+    temperature:
+      name: "multisensor_02 Temperature"
+    humidity:
+      name: "multisensor_02 Humidity"
+  - platform: adc
+    pin: A0
+    name: "multisensor_02 Brightness"
+    unit_of_measurement: lux
+    filters:
+      - lambda: |-
+          return (x / 10000.0) * 2000000.0;
+
+binary_sensor:
+  - platform: gpio
+    pin: D5
+    name: "multisensor_02 Motion"
+    device_class: motion
+
+output:
+  - platform: esp8266_pwm
+    pin: D1
+    id: redgpio
+  - platform: esp8266_pwm
+    pin: D2
+    id: greengpio
+  - platform: esp8266_pwm
+    pin: D3
+    id: bluegpio
+
+light:
+  - platform: rgb
+    name: "multisensor_02 Light"
+    red: redgpio
+    green: greengpio
+    blue: bluegpio
