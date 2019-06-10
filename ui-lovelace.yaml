@@ -18,6 +18,13 @@ views:
           - sensor.someone_is_home
           - device_tracker.eumel
       - type: entities
+        show_header_toggle: false
+        title: Ausgehen
+        entities:
+          - counter.quality_points
+          - script.add_points
+          - script.delete_points
+      - type: entities
         title: Licht Scenen
         show_header_toggle: false
         entities:
@@ -33,6 +40,7 @@ views:
           - switch.sonoff_basic_05_relay
           - timer.bed_heater
           - switch.sonoff_s20_01_relay
+          - switch.sonoff_s20_02_relay
       - type: entities
         title: Wohnzimmer
         show_header_toggle: false
@@ -65,7 +73,6 @@ views:
         title: Staubsauger
         show_header_toggle: false
         entities:
-          - script.start_frodolin
           - counter.vacuum_today
           - vacuum.frodolin
   - title: Music
@@ -85,76 +92,6 @@ views:
           - "media_player.badezimmer"
           - "media_player.kuche"
           - "media_player.wohnzimmer"
-  - title: Admin
-    icon: mdi:settings
-    cards:
-      - type: entities
-        title: Internet Geschwindigkeit
-        show_header_toggle: true
-        entities:
-          - sensor.speedtest_download
-          - sensor.speedtest_upload
-          - sensor.speedtest_ping
-      - type: entities
-        title: Alle Automationen
-        show_header_toggle: true
-        entities:
-          - automation.es_ist_schlafenzeit
-          - automation.porch_animation_speed
-          - automation.reset_vacuum_counter_every_night
-          - automation.sag_bescheid_dass_jemand_nach_hause_kommt
-          - automation.start_vacuum_once_a_day_when_nobody_is_home
-          - automation.turn_off_all_lights_when_nobodys_home
-          - automation.turn_on_kitchen_socket
-          - automation.turn_on_kitchen_socket_2
-          - automation.turn_on_star_on_sun_dawn
-          - automation.wake_me_up_with_bedroom_light_transition_for_weekdays
-          - automation.wake_me_up_with_bedroom_light_transition_for_weekend_days
-      - type: entities
-        title: Alle Scripte
-        show_header_toggle: true
-        entities:
-          - script.flash_all_lights
-          - script.start_frodolin
-          - script.set_bedtime_light
-          - script.evening_light
-          - script.morning_light
-      - type: entities
-        title: Zertifikat
-        show_header_toggle: true
-        entities:
-          - sensor.ssl_certificate_expiry
-      - type: entities
-        title: Have I been pwnd?
-        show_header_toggle: true
-        entities:
-          - sensor.breaches_andrefriesengmailcom
-          - sensor.breaches_heeringtheresagmailcom
-          - sensor.breaches_theresaheeringgmxde
-      - type: entities
-        title: Alle Lichter
-        show_header_toggle: true
-        entities:
-          - light.bedroomceiling
-          - light.wurfel
-          - light.stehlampe
-          - light.floorceiling
-          - light.flur
-          - light.globus
-          - light.lichterkette_bett
-          - light.vase
-          - light.porch_strip
-          - light.schlafzimmer
-          - light.stern
-      - type: entities
-        title: Alle Schalter
-        show_header_toggle: true
-        entities:
-          - switch.bathroom_socket
-          - switch.sonoff_pow_01_relay
-          - switch.sonoff_s20_02_relay
-          - switch.sonoff_pow_02_relay
-          - switch.sonoff_pow_03_relay
   - title: Licht Wecker
     cards:
       - type: entities
@@ -172,16 +109,6 @@ views:
           - input_datetime.last_bike_check
           - script.bike
       - type: entities
-        title: Heizung
-        entities:
-          - switch.sonoff_basic_05_relay
-      - type: entities
-        title: ausgehen
-        entities:
-          - counter.quality_points
-          - script.add_points
-          - script.delete_points
-      - type: entities
         title: Multisensor
         entities:
           - sensor.multisensor_brightness
@@ -189,6 +116,3 @@ views:
           - light.multisensor_light
           - sensor.multisensor_temperature
           - binary_sensor.multisensor_motion
-  - title: Liste
-    cards:
-      - type: shopping-list
