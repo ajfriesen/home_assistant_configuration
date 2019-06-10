@@ -17,9 +17,6 @@ views:
           - sensor.oneplus6_battery
           - sensor.someone_is_home
           - device_tracker.eumel
-      - type: iframe
-        aspect_ratio: 90%
-        url: 'https://embed.windy.com/embed2.html?lat=50.892&lon=6.956&zoom=10&level=surface&overlay=wind&menu=&message=true&marker=&calendar=&pressure=&type=map&location=coordinates&detail=&detailLat=50.966&detailLon=7.042&metricWind=km%2Fh&metricTemp=%C2%B0C&radarRange=-1'
       - type: entities
         title: Licht Scenen
         show_header_toggle: false
