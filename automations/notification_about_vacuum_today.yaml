@@ -6,9 +6,7 @@ trigger:
   entity_id: vacuum.frodolin
   to: "docked"
 action:
-  service: hangouts.send_message
-  data: 
-    target:
-      - id: !secret default_conversations
-    message:
-      - text: 'Bin jetzt wieder im Dock'
+  service: notify.chrome_push
+  data:
+      title: "Frödolin"
+      message: "Habe gesaugt Meister"

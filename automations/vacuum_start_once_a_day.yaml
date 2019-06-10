@@ -7,12 +7,18 @@ trigger:
     for:
       minutes: 5
 condition:
+    # At least one of the following is required.
   - condition: state
     entity_id: counter.vacuum_today
     state: '0'
   - condition: time
-    # At least one of the following is required.
     after: '09:00:00'
     before: '21:00:00'
 action:
-  service: script.start_frodolin
+  - service: vacuum.start
+    data:
+      entity_id: vacuum.frodolin
+  - service: notify.chrome_push
+    data:
+      title: "Frödolin"
+      message: "Ich fang an zu saugen!"

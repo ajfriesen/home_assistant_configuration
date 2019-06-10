@@ -1,0 +1,9 @@
+alias: 'Start vacuum once a day when nobody is home'
+trigger:
+  - platform: state
+    entity_id: vacuum.frodolin
+    to: 'docked'
+action:
+  service: counter.increment
+  data:
+    entity_id: counter.vacuum_today
