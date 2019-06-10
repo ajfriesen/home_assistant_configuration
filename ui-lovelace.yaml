@@ -158,15 +158,6 @@ views:
           - switch.sonoff_s20_02_relay
           - switch.sonoff_pow_02_relay
           - switch.sonoff_pow_03_relay
-  - title: "Küchen Timer"
-    cards:
-      - type: entities
-        entities:
-          - switch.sonoff_s20_02_relay
-          - input_boolean.kitchen_timer_active
-          - sensor.alarm_time_kitchen_socket
-          - input_number.alarmhour_kichten_socket
-          - input_number.alarmminutes_kitchen_socket
   - title: Licht Wecker
     cards:
       - type: entities
