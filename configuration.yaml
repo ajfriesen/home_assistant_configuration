@@ -22,15 +22,9 @@ notify:
 
 vacuum:
   - platform: xiaomi_miio
-    host: !secret vacuum_static_ip
+    host: 192.168.178.54
     token: !secret xiaomi_api_key
     name: Frödolin
-
-panel_iframe:
-  configurator:
-    title: Configurator
-    icon: mdi:wrench
-    url: !secret base_configurator_url
 
 counter:
   vacuum_today:
