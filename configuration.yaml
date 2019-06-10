@@ -8,13 +8,14 @@ homeassistant:
 
 media_player:
   - platform: kodi
-    host: 192.168.178.58
+    host: !secret kodi_static_ip
 
 notify:
   - name: chrome_push
     platform: html5
-    gcm_api_key: !secret gcm_api_key
-    gcm_sender_id: !secret gcm_sender_id
+    vapid_pub_key: !secret vapid_pub_key
+    vapid_prv_key: !secret vapid_prv_key
+    vapid_email: !secret vapid_email
   - name: hangouts
     platform: hangouts
     default_conversations:
@@ -25,12 +26,6 @@ vacuum:
     host: !secret vacuum_static_ip
     token: !secret xiaomi_api_key
     name: Frödolin
-
-panel_iframe:
-  configurator:
-    title: Configurator
-    icon: mdi:wrench
-    url: !secret base_configurator_url
 
 counter:
   vacuum_today:
