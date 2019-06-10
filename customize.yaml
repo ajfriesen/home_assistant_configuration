@@ -81,9 +81,6 @@ sensor.washing_machine_wattage:
 sensor.washing_machine_voltage: 
   friendly_name: 'Waschmaschine Spannung (V)'
   icon: mdi:washing-machine
-switch.sonoff_s20_02_relay:
-  friendly_name: 'Küchen Steckdose'
-  icon: mdi:power-socket-eu
 input_boolean.kitchen_timer_active:
   friendly_name: 'Küchen Timer aktiv'
   icon: mdi:power
