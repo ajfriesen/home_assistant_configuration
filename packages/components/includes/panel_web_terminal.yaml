@@ -1,7 +1,0 @@
-#
-#
-panel_iframe:
-  web_terminal:
-    title: Web Terminal
-    icon: mdi:console
-    url: !secret web_terminal_url

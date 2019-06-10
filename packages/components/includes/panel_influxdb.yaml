@@ -1,5 +1,0 @@
-panel_iframe:
-  influxdb:
-    title: InfluxDB
-    icon: mdi:chart-areaspline
-    url: !secret influxdb_url
