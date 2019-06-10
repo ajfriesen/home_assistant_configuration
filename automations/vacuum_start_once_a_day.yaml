@@ -10,5 +10,9 @@ condition:
   - condition: state
     entity_id: counter.vacuum_today
     state: '0'
+  - condition: time
+    # At least one of the following is required.
+    after: '09:00:00'
+    before: '21:00:00'
 action:
   service: script.start_frodolin
