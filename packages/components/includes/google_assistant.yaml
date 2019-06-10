@@ -9,6 +9,7 @@ google_assistant:
     - switch
     - light
     - script
+    - vacuum
   entity_config:
     light.stern:
       expose: true
@@ -63,9 +64,16 @@ google_assistant:
         - TV
         - Glotze
       room: Wohnzimmer
-    script.start_frodolin:
+    vacuum.frodolin:
       expose: true
-      name: Frödolin
+      name: "Frödolin"
       aliases:
-        - "Schalte den Staubsauger an"
-        - "Los Frödolin"
+        - Staubsauger
+      room: Wohnzimmer
+
+    # script.start_frodolin:
+    #   expose: true
+    #   name: Frödolin
+    #   aliases:
+    #     - "Schalte den Staubsauger an"
+    #     - "Los Frödolin"
