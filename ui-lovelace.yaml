@@ -13,7 +13,7 @@ views:
         entities:
           - device_tracker.theresa_nokia6
           - sensor.nokia6_battery
-          - device_tracker.andrej_oneplus6
+          - device_tracker.andrej_oneplus6_2_2
           - sensor.oneplus6_battery
           - sensor.someone_is_home
           - device_tracker.eumel
@@ -81,17 +81,11 @@ views:
       - type: entities
         title: Google Music
         entities:
-          - input_select.media_player
-          - input_text.card_id
-      - type: entities
-        title: Media Player
-        entities:
-          - "media_player.uberall"
-          - "media_player.schlafzimmer"
-          - "media_player.alles_ausser_schlafzimmer"
-          - "media_player.badezimmer"
-          - "media_player.kuche"
-          - "media_player.wohnzimmer"
+          - media_player.gmusic_player
+          - input_select.gmusic_player_speakers
+          - input_select.gmusic_player_source
+          - input_select.gmusic_player_playlist
+          - input_select.gmusic_player_station
   - title: Licht Wecker
     cards:
       - type: entities

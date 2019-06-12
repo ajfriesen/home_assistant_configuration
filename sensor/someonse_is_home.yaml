@@ -3,4 +3,4 @@ sensors:
   someone_is_home:
     icon_template: mdi-home-assistant
     friendly_name: "Jemand Zuhause"
-    value_template: '{% if "home" in [states.device_tracker.andrej_oneplus6.state, states.device_tracker.theresa_nokia6.state] %}yes{% else %}no{% endif %}'
+    value_template: '{% if "home" in [states.device_tracker.andrej_oneplus6_2.state, states.device_tracker.theresa_nokia6.state] %}yes{% else %}no{% endif %}'

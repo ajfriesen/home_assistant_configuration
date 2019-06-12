@@ -3,6 +3,6 @@ binary_sensor:
     sensors:
       people_home:
         value_template: >-
-          {{ is_state('device_tracker.andrej_oneplus6', 'home')
+          {{ is_state('device_tracker.andrej_oneplus6_2', 'home')
              or is_state('device_tracker.theresa_nokia6', 'home')
           }}
