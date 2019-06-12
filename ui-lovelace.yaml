@@ -11,9 +11,9 @@ views:
         title: Bewohner
         show_header_toggle: false
         entities:
-          - device_tracker.theresa_nokia6_2
+          - person.theresa
           - sensor.nokia6_battery
-          - device_tracker.andrej_oneplus6_2
+          - person.andrej
           - sensor.oneplus6_battery
           - sensor.someone_is_home
           - device_tracker.eumel

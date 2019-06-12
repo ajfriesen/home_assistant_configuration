@@ -1,0 +1,21 @@
+---
+# https://www.home-assistant.io/components/person/
+#
+person:
+  - name: Andrej
+    id: andrej
+    user_id: be591d877f57468fa0358234cacd339c
+    device_trackers:
+      # WIFI Fritzbox
+      - device_tracker.oneplus_6
+      # Owntracks
+      - device_tracker.andrej_oneplus6_2
+
+  - name: Theresa
+    id: theresa
+    user_id: 1172f6e2c0924359a1fd2af40b8b2478
+    device_trackers:
+      # WIFI Fritzbox
+      - device_tracker.theresa_nokia6_2
+      # Owntracks
+      - device_tracker.nokia6
