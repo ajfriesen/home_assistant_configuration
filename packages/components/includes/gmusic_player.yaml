@@ -11,7 +11,7 @@ media_player:
 
     ## Set login_type to access Google Music
     ## valid options are 'legacy' or 'oauth'
-    login_type: legacy
+    login_type: oauth
 
     ## LEGACY login -- not required if using 'oauth' login
     ## https://unofficial-google-music-api.readthedocs.io/en/latest/reference/mobileclient.html#gmusicapi.clients.Mobileclient.login
@@ -135,11 +135,11 @@ group:
 
 # Hassio specfic
 
-###   Command line to install gmusicapi
+## Command line to install gmusicapi
 shell_command:
   install_gmusic: pip3 install gmusicapi==11.0.4
 
-### Automations to install gmusic on homeassistant start
+## Automations to install gmusic on homeassistant start
 automation:
   - alias: homeassistant_start_gmusic
     hide_entity: true
