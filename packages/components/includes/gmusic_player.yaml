@@ -11,7 +11,7 @@ media_player:
 
     ## Set login_type to access Google Music
     ## valid options are 'legacy' or 'oauth'
-    login_type: oauth
+    login_type: legacy
 
     ## LEGACY login -- not required if using 'oauth' login
     ## https://unofficial-google-music-api.readthedocs.io/en/latest/reference/mobileclient.html#gmusicapi.clients.Mobileclient.login
