@@ -3,5 +3,5 @@ sensors:
   nokia6_battery:
     friendly_name: Nokia 6 Akku
     unit_of_measurement: "%"
-    value_template: '{{ states.device_tracker.theresa_nokia6.attributes.battery|int }}'
+    value_template: '{{ states.device_tracker.theresa_nokia6.attributes.battery_level|int }}'
     device_class: battery

@@ -3,5 +3,5 @@ sensors:
   oneplus6_battery:
     friendly_name: Oneplus 6 Akku
     unit_of_measurement: "%"
-    value_template: '{{ states.device_tracker.andrej_oneplus6.attributes.battery|int }}'
+    value_template: '{{ states.device_tracker.andrej_oneplus6.attributes.battery_level|int }}'
     device_class: battery

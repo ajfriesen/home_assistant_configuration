@@ -25,7 +25,7 @@ media_player:
     ## OAUTH login -- not required if using 'legacy' login
     ## https://unofficial-google-music-api.readthedocs.io/en/latest/reference/mobileclient.html#gmusicapi.clients.Mobileclient.perform_oauth
     ## Set path to existing oauth credentials file.
-    oauth_cred: '/config/.gmusic_oauth'
+    oauth_cred: '/config/gmusic_oauth'
 
     ## Set various input_select REQUIRED by gmusic_player,
     ## future plan is to make these optional but for now
