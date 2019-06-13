@@ -80,6 +80,7 @@ views:
     cards:
       - type: entities
         title: Google Music
+        show_header_toggle: false
         entities:
           - media_player.gmusic_player
           - input_select.gmusic_player_speakers
