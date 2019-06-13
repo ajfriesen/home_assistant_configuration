@@ -137,12 +137,6 @@ switch.sonoff_basic_05_relay:
   friendly_name: 'Bettheizung'
   icon: mdi:radiator
 
-device_tracker.andrej_oneplus5t:
-  friendly_name: Andrej
-
-device_tracker.theresa_nokia6_2:
-  friendly_name: Theresa
-
 switch.sonoff_s20_01_relay:
   friendly_name: 'Schreibtischsteckdose'
   icon: mdi:power-socket-eu
