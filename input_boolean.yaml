@@ -1,6 +1,3 @@
-kitchen_timer_active:
-  name: 'Küchen Timer aktiv'
-  initial: off
 
 alarm_active_weekday:
   name: Wochentage
