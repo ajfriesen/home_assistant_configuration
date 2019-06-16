@@ -6,10 +6,6 @@ homeassistant:
 
   packages: !include_dir_named packages/components/includes
 
-media_player:
-  - platform: kodi
-    host: !secret kodi_static_ip
-
 # Includes
 
 input_boolean: !include input_boolean.yaml
