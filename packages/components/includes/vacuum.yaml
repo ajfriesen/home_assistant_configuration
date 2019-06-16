@@ -1,0 +1,72 @@
+---
+
+vacuum:
+  - platform: xiaomi_miio
+    host: !secret vacuum_static_ip
+    token: !secret xiaomi_api_key
+    name: Frödolin
+
+counter:
+  vacuum_today:
+    step: 1
+
+automation:
+  - alias: 'Start vacuum once a day when nobody is home'
+    initial_state: true
+    trigger:
+      - platform: state
+        entity_id: vacuum.frodolin
+        to: 'docked'
+    action:
+      service: counter.increment
+      data:
+        entity_id: counter.vacuum_today
+
+  - alias: 'Start vacuum once a day when nobody is home'
+    initial_state: true
+    trigger:
+      - platform: state
+        entity_id: sensor.someone_is_home
+        from: 'yes'
+        to: 'no'
+        for:
+          minutes: 5
+    condition:
+        # At least one of the following is required.
+      - condition: state
+        entity_id: counter.vacuum_today
+        state: '0'
+      - condition: time
+        after: '09:00:00'
+        before: '21:00:00'
+    action:
+      - service: vacuum.start
+        data:
+          entity_id: vacuum.frodolin
+      - service: notify.chrome_push
+        data:
+          title: "Frödolin"
+          message: "Ich fang an zu saugen!"
+
+  - alias: Reset vacuum counter every night
+    hide_entity: true
+    initial_state: true
+    trigger:
+      platform: time
+      at: "23:59:00"
+    action:
+      service: counter.reset
+      entity_id: counter.vacuum_today
+
+  - alias: Tell that the vacuum is back at the dock again
+    hide_entity: true
+    initial_state: true
+    trigger:
+      platform: state
+      entity_id: vacuum.frodolin
+      to: "docked"
+    action:
+      service: notify.chrome_push
+      data:
+          title: "Frödolin"
+          message: "Habe gesaugt Meister"

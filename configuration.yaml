@@ -21,16 +21,6 @@ notify:
     default_conversations:
       - id: !secret default_conversations
 
-vacuum:
-  - platform: xiaomi_miio
-    host: !secret vacuum_static_ip
-    token: !secret xiaomi_api_key
-    name: Frödolin
-
-counter:
-  vacuum_today:
-    step: 1
-
 # Includes
 
 input_boolean: !include input_boolean.yaml
