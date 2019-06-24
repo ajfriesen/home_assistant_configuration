@@ -111,3 +111,13 @@ views:
           - light.multisensor_light
           - sensor.multisensor_temperature
           - binary_sensor.multisensor_motion
+
+
+  - title: Zigbee
+    show_header_toggle: false
+    cards:
+      - type: entities
+        entities:
+          - entity: input_boolean.zigbee_permit_join
+          - entity: timer.zigbee_permit_join
+          - entity: sensor.bridge_state
