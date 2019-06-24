@@ -1,9 +1,16 @@
 mqtt:
-  broker: a0d7b954-mqtt # This will have to be your mqtt broker
+  # broker: a0d7b954-mqtt # This will have to be your mqtt broker
+  broker: 192.168.178.60
   username: !secret mqtt_username
   password: !secret mqtt_password
-  client_id: home-assistant
+  # client_id: home-assistant
   discovery: true
+  birth_message:
+    topic: 'hass/status'
+    payload: 'online'
+  will_message:
+    topic: 'hass/status'
+    payload: 'offline'
 
 input_boolean:
   zigbee_permit_join:
