@@ -1,0 +1,20 @@
+---
+# https://www.home-assistant.io/components/version/
+sensor:
+  - platform: version
+    image: qemux86-64
+    source: hassio
+
+automation:
+  - id: check_ha_config_by_release
+    alias: "Check config with new Hass.io version when released"
+    hide_entity: true
+    initial_state: 'on'
+    trigger:
+      platform: state
+      entity_id: sensor.latest_version
+    action:
+      service: hassio.addon_start
+      data:
+        addon:
+          core_check_config
