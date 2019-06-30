@@ -11,7 +11,7 @@ counter:
     step: 1
 
 automation:
-  - alias: 'Start vacuum once a day when nobody is home'
+  - alias: 'Increase vacuum_today counter'
     initial_state: true
     trigger:
       - platform: state
