@@ -1,0 +1,63 @@
+---
+# 0x00158d00029ba1ed_action
+
+automation:
+  - id: increase_volume
+    alias: "increase_volume"
+    hide_entity: true
+    initial_state: 'on'
+    trigger:
+      platform: mqtt
+      topic: zigbee2mqtt/0x00158d00029ba1ed
+    condition:
+      condition: template
+      value_template: '{{ "rotate_right" == trigger.payload_json.action }}'
+    action:
+      service: media_player.volume_up
+      entity_id: media_player.kuche
+
+  - id: decrease_volume
+    alias: "decrease_volume"
+    hide_entity: true
+    initial_state: 'on'
+    trigger:
+      platform: state
+      #value_template: "{{ states.media_player.gmusic_player.attributes._player_state }}"
+      entity_id: 'sensor.aqara_cube'
+      to: 'rotate_left'
+    action:
+      - service: media_player.volume_down
+        data:
+          entity_id: 'media_player.kuche'
+
+  - id: play_wdr2
+    alias: "okay wdr2 "
+    hide_entity: true
+    initial_state: 'on'
+    trigger:
+      platform: state
+      #value_template: "{{ states.media_player.gmusic_player.attributes._player_state }}"
+      entity_id: 'sensor.aqara_cube'
+      to: 'shake'
+    action:
+    - service: media_player.play_media
+      entity_id: media_player.kuche
+      data:
+        media_content_id: http://wdr-wdr2-rheinland.icecast.wdr.de/wdr/wdr2/rheinland/mp3/128/stream.mp3
+        media_content_type: audio/mp4
+
+        
+
+  - id: stop_kueche
+    alias: "stop_kueche"
+    hide_entity: true
+    initial_state: 'on'
+    trigger:
+      platform: state
+      #value_template: "{{ states.media_player.gmusic_player.attributes._player_state }}"
+      entity_id: 'sensor.aqara_cube'
+      to: 'tap'
+    action:
+    - service: media_player.media_play_pause
+      data:
+        entity_id: 'media_player.kuche'
