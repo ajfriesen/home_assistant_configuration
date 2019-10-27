@@ -70,3 +70,27 @@ automation:
       data:
           title: "Frödolin"
           message: "Habe gesaugt Meister"
+
+  - alias: "Go to trashcan on friday"
+    description: "test"
+    hide_entity: true
+    initial_state: true
+    trigger:
+      platform: time
+      at: "18:30:00"
+    condition:
+      condition: time
+      weekday:
+        - fri
+    action:
+      service: script.empty_vacuum
+
+script:
+  empty_vacuum:
+    alias: "Staubsauger leeren"
+    sequence:
+    - service: vacuum.send_command
+      data:
+        entity_id: vacuum.frodolin
+        command: app_goto_target
+        params: [27364,26599]
