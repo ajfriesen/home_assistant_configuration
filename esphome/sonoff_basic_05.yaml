@@ -1,15 +1,22 @@
+---
+# bettheizung
 esphome:
   name: sonoff_basic_05
   platform: ESP8266
   board: esp01_1m
 
 wifi:
-  ssid: !secret wifi_ssid
-  password: !secret wifi_password
-  manual_ip:
-    static_ip: !secret sonoff_basic_05_static_ip
-    gateway: !secret wifi_gateway
-    subnet: !secret wifi_subnet
+  networks:
+  - ssid: !secret wifi_ssid
+    password: !secret wifi_password
+    manual_ip:
+      static_ip: !secret sonoff_basic_05_static_ip
+      gateway: !secret wifi_gateway
+      subnet: !secret wifi_subnet
+  reboot_timeout: 0s
+  ap:
+    ssid: ${devicename}
+    password: !secret esphome_ap_password
 
 # Enable logging
 logger:

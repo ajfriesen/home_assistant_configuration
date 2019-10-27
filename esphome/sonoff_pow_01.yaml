@@ -4,12 +4,17 @@ esphome:
   board: esp01_1m
 
 wifi:
-  ssid: !secret wifi_ssid
-  password: !secret wifi_password
-  manual_ip:
-    static_ip: !secret sonoff_pow_01_static_ip
-    gateway: !secret wifi_gateway
-    subnet: !secret wifi_subnet
+  networks:
+  - ssid: !secret wifi_ssid
+    password: !secret wifi_password
+    manual_ip:
+      static_ip: !secret sonoff_pow_01_static_ip
+      gateway: !secret wifi_gateway
+      subnet: !secret wifi_subnet
+  reboot_timeout: 0s
+  ap:
+    ssid: ${devicename}
+    password: !secret esphome_ap_password
 
 # Enable logging
 logger:
