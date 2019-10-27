@@ -1,39 +1,36 @@
 flash_all_lights:
   alias: Flash All Lights
   sequence:
-    - alias: Light on
-      service: homeassistant.turn_on
-      data:
-        entity_id: light.all
-    - delay:
-        # time for flash light on
-        seconds: 1
-    - alias: Light off
-      service: homeassistant.turn_off
-      data:
-        entity_id: light.all
-    - delay:
-        # time for flash light off
-        seconds: 1
-    - alias: loop_flash_all_lights
-      service: script.turn_on
-      data:
-        entity_id: script.flash_all_light
-
+  - alias: Light on
+    service: homeassistant.turn_on
+    data:
+      entity_id: light.all
+  - delay:
+      seconds: 1
+  - alias: Light off
+    service: homeassistant.turn_off
+    data:
+      entity_id: light.all
+  - delay:
+      seconds: 1
+  - alias: loop_flash_all_lights
+    service: script.turn_on
+    data:
+      entity_id: script.flash_all_light
 morning_light:
-  alias: 'Set lights for the morning'
+  alias: Set lights for the morning
   sequence:
-    - alias: 'Set hue lights'
-      service: light.turn_on
-      data:
-        brightness_pct: '1'
-        entity_id:
-          - light.bedroomceiling
-          - light.floorceiling
-    - alias: 'Set normal light switchtes'
-      service: light.turn_on
+  - alias: Set hue lights
+    service: light.turn_on
+    data:
+      brightness_pct: '1'
       entity_id:
-        - light.lichterkette_bett
-        - light.stern
-        - light.globus
-        - light.vase
+      - light.bedroomceiling
+      - light.floorceiling
+  - alias: Set normal light switchtes
+    service: light.turn_on
+    entity_id:
+    - light.lichterkette_bett
+    - light.stern
+    - light.globus
+    - light.vase
