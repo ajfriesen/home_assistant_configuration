@@ -20,3 +20,6 @@ node-red
 /glances
 *.ttf
 gmusic_oauth
+custom_components/hacs/*
+.gmusic_authtoken
+.google.token
