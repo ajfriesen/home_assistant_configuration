@@ -24,6 +24,12 @@ views:
           - counter.quality_points
           - script.add_points
           - script.delete_points
+      # - type: entities
+      #   entities:
+      #     - type: cast
+      #       name: Home Assistant Cast
+      #       view: default_view
+      #       hide_if_unavailable: false
       - type: entities
         title: Licht Scenen
         show_header_toggle: false
@@ -31,6 +37,7 @@ views:
           - script.morning_light
           - script.evening_light
           - script.set_bedtime_light
+          - script.vacuum_leeren
       - type: entities
         title: Schlafzimmer
         show_header_toggle: false
