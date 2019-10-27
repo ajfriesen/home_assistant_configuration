@@ -20,7 +20,7 @@
   trigger:
   - below: '380'
     entity_id: sensor.sonoff_pow_03_power
-    for: '00:05:00'
+    for: 00:05:00
     platform: numeric_state
   condition:
   - condition: state
@@ -35,3 +35,15 @@
       entity_id: media_player.uberall
       message: Die Wäsche ist fertig!
     service: tts.google_say
+- id: '1572183016472'
+  alias: Neue Automatisierung
+  description: ''
+  trigger:
+  - entity_id: sensor.0x00158d00023377e0_click
+    platform: state
+  condition: []
+  action:
+  - device_id: 98a383d5e6004187b73e40b78addda3f
+    domain: light
+    entity_id: light.stern
+    type: toggle
