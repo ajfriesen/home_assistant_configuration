@@ -1,0 +1,45 @@
+automation:
+  - id: turn_on_light
+    alias: Turn on light after it is dark
+    hide_entity: true
+    trigger:
+      platform: state
+      entity_id: binary_sensor.0x00158d00032bd611_occupancy
+      to: 'on'
+    condition:
+      condition: and
+      conditions:
+      - condition: state
+        entity_id: sensor.someone_is_home
+        state: 'yes'
+      - condition: state
+        entity_id: sun.sun
+        state: 'below_horizon'
+      - condition: time
+        after: '22:00:00'
+        before: '07:00:00'
+    action:
+    - service: light.turn_on
+      data:
+        entity_id: light.floor_ceiling
+        brightness_pct: 50
+    - service: timer.start
+      entity_id: timer.floor_timer
+
+  - id: turn_of_light_after_some_time
+    alias: turn of
+    hide_entity: true
+    trigger:
+    - platform: event
+      event_type: timer.finished
+      event_data:
+        entity_id: timer.test
+    action:
+    - service: light.turn_off
+      entity_id: light.floor_ceiling
+
+timer:
+  floor_timer:
+    name: "Timer Flur Licht"
+    duration: '00:04:30'
+    icon: mdi:timer
