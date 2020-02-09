@@ -46,22 +46,22 @@ views:
           - switch.sonoff_pow_01_relay
           - switch.sonoff_basic_05_relay
           - timer.bed_heater
-          - switch.sonoff_s20_01_relay
-          - switch.sonoff_s20_02_relay
+          - light.globus
+          - light.stehlampe
       - type: entities
         title: Wohnzimmer
         show_header_toggle: false
         entities:
-          - light.wurfel
           - light.stern
           - switch.sonoff_pow_02_relay
       - type: entities
-        title: Theresas Zimmer
+        title: Arbeitszimmer
         show_header_toggle: true
         entities:
           - light.lichterkette_bett
-          - light.globus
-          - light.stehlampe
+          - switch.sonoff_s20_01_relay
+          - switch.sonoff_s20_02_relay
+          - light.wurfel
       - type: entities
         title: "Küche"
         show_header_toggle: false
@@ -82,18 +82,6 @@ views:
         entities:
           - counter.vacuum_today
           - vacuum.frodolin
-  - title: Music
-    icon: mdi:music-circle-outline
-    cards:
-      - type: entities
-        title: Google Music
-        show_header_toggle: false
-        entities:
-          - media_player.gmusic_player
-          - input_select.gmusic_player_speakers
-          - input_select.gmusic_player_source
-          - input_select.gmusic_player_playlist
-          - input_select.gmusic_player_station
   - title: Licht Wecker
     cards:
       - type: entities
@@ -103,21 +91,34 @@ views:
           - input_number.alarmminutes
           - input_boolean.alarm_active_weekday
           - input_boolean.alarm_active_weekend
-  - title: testing
-    cards:
-      - type: entities
-        title: Fahrrad
-        entities:
-          - input_datetime.last_bike_check
-          - script.bike
-      - type: entities
-        title: Multisensor
-        entities:
-          - sensor.multisensor_brightness
-          - sensor.multisensor_humidity
-          - light.multisensor_light
-          - sensor.multisensor_temperature
-          - binary_sensor.multisensor_motion
+      - type: custom:xiaomi-vacuum-map-card
+        title: testong
+        entity: vacuum.xiaomi_vacuum
+        map_image: '/local/custom_lovelace/xiaomi_vacuum_map_card/map.png'
+        calibration_points:
+          - vacuum:
+              x: 25500
+              y: 25500
+            map:
+              x: 466
+              y: 1889
+          - vacuum:
+              x: 26500
+              y: 26500
+            map:
+              x: 730
+              y: 1625
+          - vacuum:
+              x: 25500
+              y: 26500
+            map:
+              x: 466
+              y: 1625
+        zones:
+          - [[25500, 25500, 26500, 26500]]
+          - [[24215, 28125, 29465, 32175]]
+          - [[24245, 25190, 27495, 27940], [27492, 26789, 28942, 27889]]
+          - [[28972, 26715, 31072, 27915], [29457, 27903, 31107, 29203], [30198, 29215, 31498, 31215], [29461, 31228, 31511, 32478]]
 
 
   - title: Zigbee
@@ -128,3 +129,8 @@ views:
           - entity: input_boolean.zigbee_permit_join
           - entity: timer.zigbee_permit_join
           - entity: sensor.bridge_state
+
+
+resources:
+  - url: /community_plugin/lovelace-xiaomi-vacuum-map-card/xiaomi-vacuum-map-card.js
+    type: module

@@ -1,15 +1,13 @@
 evening_light:
   alias: 'Set lights for the evening'
   sequence:
-    - alias: 'Set hue lights'
-      service: light.turn_on
+    - service: light.turn_on
       data:
         brightness_pct: '25'
         entity_id:
           - light.bedroom_ceiling
           - light.floor_ceiling
-    - alias: 'Set normal light switchtes'
-      service: light.turn_on
+    - service: light.turn_on
       entity_id:
         - light.lichterkette_bett
         - light.stern
