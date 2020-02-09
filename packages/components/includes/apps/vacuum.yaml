@@ -49,7 +49,6 @@ automation:
           message: "Ich fang an zu saugen!"
 
   - alias: Reset vacuum counter every night
-    hide_entity: true
     initial_state: true
     trigger:
       platform: time
@@ -59,7 +58,6 @@ automation:
       entity_id: counter.vacuum_today
 
   - alias: Tell that the vacuum is back at the dock again
-    hide_entity: true
     initial_state: true
     trigger:
       platform: state
@@ -73,7 +71,6 @@ automation:
 
   - alias: "Go to trashcan on friday"
     description: "test"
-    hide_entity: true
     initial_state: true
     trigger:
       platform: time

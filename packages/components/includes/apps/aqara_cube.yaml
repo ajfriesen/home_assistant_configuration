@@ -4,7 +4,6 @@
 automation:
   - id: increase_volume
     alias: "increase_volume"
-    hide_entity: true
     initial_state: 'on'
     trigger:
       platform: mqtt
@@ -18,7 +17,6 @@ automation:
 
   - id: decrease_volume
     alias: "decrease_volume"
-    hide_entity: true
     initial_state: 'on'
     trigger:
       platform: state
@@ -32,7 +30,6 @@ automation:
 
   - id: play_wdr2
     alias: "okay wdr2 "
-    hide_entity: true
     initial_state: 'on'
     trigger:
       platform: state
@@ -50,7 +47,6 @@ automation:
 
   - id: stop_kueche
     alias: "stop_kueche"
-    hide_entity: true
     initial_state: 'on'
     trigger:
       platform: state

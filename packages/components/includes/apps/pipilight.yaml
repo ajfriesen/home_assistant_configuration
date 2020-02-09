@@ -1,7 +1,6 @@
 automation:
   - id: turn_on_light
     alias: Turn on light after it is dark
-    hide_entity: true
     trigger:
       platform: state
       entity_id: binary_sensor.0x00158d00032bd611_occupancy
@@ -28,7 +27,6 @@ automation:
 
   - id: turn_of_light_after_some_time
     alias: turn of
-    hide_entity: true
     trigger:
     - platform: event
       event_type: timer.finished

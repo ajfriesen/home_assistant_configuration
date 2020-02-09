@@ -1,5 +1,4 @@
 alias: 'Es ist Schlafenzeit'
-hide_entity: False
 initial_state: False
 trigger:
   platform: time
