@@ -10,7 +10,6 @@ homeassistant:
 
 automation: !include automations.yaml
 input_boolean: !include input_boolean.yaml
-zone: !include zones.yaml
 input_number: !include input_number.yaml
 sensor: !include_dir_list sensor/
 automation old: !include_dir_list automations/
