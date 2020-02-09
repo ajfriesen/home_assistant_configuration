@@ -2,6 +2,10 @@
 
 [![Build Status](https://travis-ci.org/ajfriesen/home_assistant_configuration.svg?branch=master)](https://travis-ci.org/ajfriesen/home_assistant_configuration)
 
+[![GitHub Activity][commits-shield]][commits]
+
+[![GitHub Last Commit][last-commit-shield]][commits]
+
 I am using Home Assistant with [HASS.IO](https://home-assistant.io/) on a HP ProLiant G7 MicroServer N54L.
 
 ## Screenshots
