@@ -1,6 +1,6 @@
 mqtt:
   # broker: a0d7b954-mqtt # This will have to be your mqtt broker
-  broker: 192.168.178.60
+  broker: !secret home_assistant_ip
   username: !secret mqtt_username
   password: !secret mqtt_password
   # client_id: home-assistant
