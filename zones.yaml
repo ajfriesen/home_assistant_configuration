@@ -2,13 +2,13 @@
   latitude: !secret work_latitude_theresa
   longitude: !secret work_longitude_theresa
   radius: 150
-  icon: mdi:company
+  icon: mdi:domain
 
 - name: His Work
   latitude: !secret work_latitude_andrej
   longitude: !secret work_longitude_andrej
   radius: 150
-  icon: mdi:company
+  icon: mdi:domain
 
 - name: Home
   latitude: !secret home_latitude
