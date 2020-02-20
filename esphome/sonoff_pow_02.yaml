@@ -1,3 +1,4 @@
+# Fernsehr
 esphome:
   name: sonoff_pow_02
   platform: ESP8266
@@ -22,6 +23,7 @@ logger:
 
 # Enable Home Assistant API
 api:
+  reboot_timeout: 0s
 
 ota:
 
