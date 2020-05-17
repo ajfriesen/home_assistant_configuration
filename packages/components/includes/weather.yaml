@@ -1,0 +1,9 @@
+weather:
+  - platform: darksky
+    api_key: !secret dark_sky_api_key
+
+  - platform: openweathermap
+    api_key: !secret openweathermap_api_key
+sensor:
+  - platform: dwd_weather_warnings
+    region_name: Köln-Mülheim
