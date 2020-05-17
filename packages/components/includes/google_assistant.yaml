@@ -26,36 +26,36 @@ google_assistant:
       room: Küche
     light.lichterkette_bett:
       expose: true
-      name: Lichterkette Theresas Zimmer
-      room: "Theresas Zimmer"
+      name: Lichterkette Bett
+      room: "Arbeitszimmer"
     light.globus:
       expose: true
       name: Globus
       aliases:
         - Welt
-      room: "Theresas Zimmer"
-    light.wurfel:
-      expose: true
-      room: Wohnzimmer
+      room: "Schlafzimmer"
+    # light.wurfel:
+    #   expose: true
+    #   room: Wohnzimmer
     light.floor_ceiling:
       expose: true
       room: Flur
     light.stehlampe:
       expose: true
       name: Stehlampe
-      room: Theresas Zimmer
+      room: "Schlafzimmer"
     switch.sonoff_basic_05_relay:
       expose: true
       name: Bettheizung
       room: Schlafzimmer
-    switch.sonoff_pow_01_relay:
-      expose: true
-      room: Schlafzimmer
-    switch.sonoff_s20_02_relay:
-      expose: true
-      aliases:
-        - Reiskocher
-      room: "Küche"
+    # switch.sonoff_pow_01_relay:
+    #   expose: true
+    #   room: Schlafzimmer
+    # switch.sonoff_s20_02_relay:
+    #   expose: true
+    #   aliases:
+    #     - Reiskocher
+    #   room: "Küche"
     switch.sonoff_pow_03_relay:
       expose: true
       room: Küche
