@@ -18,8 +18,8 @@
 - id: '1543791358275'
   alias: Benachrichtigung Waschmaschine fertig
   trigger:
-  - below: '380'
-    entity_id: sensor.sonoff_pow_03_power
+  - below: '1'
+    entity_id: sensor.sonoff_pow_03_current
     for: 00:05:00
     platform: numeric_state
   condition:
@@ -30,8 +30,25 @@
   - data:
       message: Bin fertig
       title: Waschmaschine
-    service: notify.chrome_push
-  - data:
-      entity_id: media_player.uberall
-      message: Die Wäsche ist fertig!
-    service: tts.google_say
+    service: notify.mobile_app_oneplus_a6003
+- id: '1587675786355'
+  alias: Schalte Licht ein, wenn die Sonne untergeht
+  description: ''
+  trigger:
+  - event: sunset
+    offset: -00:30:00
+    platform: sun
+  condition: []
+  action:
+  - device_id: ff123b723fe24102889b1c5ba6ac486e
+    domain: light
+    entity_id: light.small_star
+    type: turn_on
+  - device_id: 73c0ac5ac5ce429aaa69babd6d948334
+    domain: light
+    entity_id: light.globus
+    type: turn_on
+  - device_id: 98a383d5e6004187b73e40b78addda3f
+    domain: light
+    entity_id: light.stern
+    type: turn_on
