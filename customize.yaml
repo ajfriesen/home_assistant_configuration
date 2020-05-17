@@ -58,15 +58,15 @@ group.all_switches:
   hidden: false
   friendly_name: Alle Schalter
 
-script.eat_out:
-  friendly_name: Essen gehen
-  icon: mdi:food
-script.wine_and_dine:
-  friendly_name: Richtig fein Essen gehen
-  icon: mdi:food-variant
-script.coffee_and_cake:
-  friendly_name: Kaffee und Kuchen
-  icon: mdi:coffee
+# script.eat_out:
+#   friendly_name: Essen gehen
+#   icon: mdi:food
+# script.wine_and_dine:
+#   friendly_name: Richtig fein Essen gehen
+#   icon: mdi:food-variant
+# script.coffee_and_cake:
+#   friendly_name: Kaffee und Kuchen
+#   icon: mdi:coffee
 script.increment_going_out:
   friendly_name: Ein Pluspunkt
   icon: mdi:plus-one
@@ -115,9 +115,9 @@ light.vase:
 light.stern:
   friendly_name: Stern
   icon: mdi:star
-switch.sonoff_pow_01_relay:
-  friendly_name: Ventilator
-  icon: mdi:fan
+# switch.sonoff_pow_01_relay:
+#   friendly_name: Ventilator
+#   icon: mdi:fan
 
 counter.vacuum_today:
   friendly_name: 'Wie oft wurde heute gesaugt?'
@@ -128,10 +128,6 @@ script.start_frodolin:
 
 counter.going_out:
   friendly_name: 'Ausgehepunkte'
-
-switch.bathroom_socket:
-  friendly_name: 'Badezimmer Steckdose'
-  icon: mdi:power-socket-eu
 
 switch.sonoff_basic_05_relay:
   friendly_name: 'Bettheizung'
