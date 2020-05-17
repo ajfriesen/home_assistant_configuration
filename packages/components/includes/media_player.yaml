@@ -1,3 +1,4 @@
 media_player:
-  - platform: kodi
-    host: !secret kodi_static_ip
+  - platform: androidtv
+    host: !secret nvidia_shield_tv_ip
+    name: Shield TV
