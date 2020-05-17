@@ -1,6 +1,6 @@
 homeassistant:
-  unit_system: metric
-  time_zone: Europe/Berlin
+  # unit_system: metric
+  # time_zone: Europe/Berlin
 
   customize: !include customize.yaml
 
