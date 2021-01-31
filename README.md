@@ -1,3 +1,7 @@
+# Archived
+
+*This repo is qrchived since Home Assistant is moving to more UI setups and therefore I do not have the need to have a backup on github anymore.*
+
 # This is my personal Home Assistant configuration with HASS.IO
 
 [![Build Status](https://travis-ci.org/ajfriesen/home_assistant_configuration.svg?branch=master)](https://travis-ci.org/ajfriesen/home_assistant_configuration)
