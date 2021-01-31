@@ -1,6 +1,7 @@
 # Archived
 
-*This repo is qrchived since Home Assistant is moving to more UI setups and therefore I do not have the need to have a backup on github anymore.*
+*This repo is archived since Home Assistant is moving to more UI setups and therefore I do not have the need to have a backup on github anymore.*
+I am still using Home Assistant and think it is awesome as always :-)
 
 # This is my personal Home Assistant configuration with HASS.IO
 
